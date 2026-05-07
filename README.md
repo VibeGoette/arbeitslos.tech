@@ -10,8 +10,8 @@ Interaktive Aufklärungsseite über die Auswirkungen von AI auf den Arbeitsmarkt
 
 ## Features
 
-- Dark/Light Theme Toggle
-- Three.js 3D Hero Background
+- Hub + Tiefen-Unterseiten (Roboter, Medizin, ASI, Quellen)
+- Three.js 3D Hero Background (nur auf der Startseite)
 - Chart.js Visualisierungen (Jobmarkt, Medizin, Arbeitslosigkeit)
 - Scroll-Animationen (IntersectionObserver)
 - Responsive (Mobile-first)
@@ -19,11 +19,11 @@ Interaktive Aufklärungsseite über die Auswirkungen von AI auf den Arbeitsmarkt
 
 ## Tech Stack
 
-- Vanilla HTML/CSS/JS (Single File)
+- Vanilla HTML/CSS/JS (eine Datei pro Seite, kein Build-Step)
 - Three.js r128 (CDN)
 - Chart.js 4.4.0 (CDN)
 - Google Fonts: Fraunces + Plus Jakarta Sans
-- Vercel Hosting
+- Vercel Hosting (cleanUrls)
 
 ## Kapitel
 
@@ -38,7 +38,12 @@ Interaktive Aufklärungsseite über die Auswirkungen von AI auf den Arbeitsmarkt
 
 ```
 arbeitlos-ticket/
-├── index.html          # v2 — universalisierte Version
+├── index.html          # Hub — volle Story als Scroll-Seite
+├── roboter.html        # Deep Dive: Optimus, Pflege, Lawine (mit unemploymentChart)
+├── medizin.html        # Deep Dive: Diagnose, Chirurgie, Salamitaktik (mit medChart)
+├── asi.html            # Deep Dive: Dad Jokes + 5 ASI-Sektionen
+├── quellen.html        # Methodik + alle 60 Fußnoten an einem Ort
+├── vercel.json         # cleanUrls: /roboter statt /roboter.html
 ├── robots.txt
 ├── sitemap.xml
 ├── CLAUDE.md
@@ -46,6 +51,10 @@ arbeitlos-ticket/
 └── v1-archive/
     └── index.html      # Original (basty-macht-sich-sorgen)
 ```
+
+Inhalte der Tiefen-Cluster sind bewusst zwischen `index.html` und der jeweiligen
+Unterseite dupliziert (voll-und-Teaser-Modus). Bei Inhalts-Änderungen also beide
+Dateien anpassen.
 
 ## History
 
