@@ -2,28 +2,37 @@
 
 ## Projekt
 
-Interaktive AI-Aufklärungsseite. Single-File HTML/CSS/JS. Deployed auf Vercel.
+Interaktive AI-Aufklärungsseite. HTML/CSS/JS inline pro Seite, kein Build-Step. Deployed auf Vercel.
 
 ## Architektur
 
-- `index.html` — Komplette Seite (HTML + CSS + JS inline)
-- Three.js r128 via CDN (3D Hero)
+- `index.html` — Hub mit voller Story (HTML + CSS + JS inline)
+- `roboter.html` — Deep Dive: Optimus, Pflege, Lawine (mit `unemploymentChart`)
+- `medizin.html` — Deep Dive: Diagnose, Chirurgie, Salamitaktik (mit `medChart`, Accordion via `toggleExpand`)
+- `asi.html` — Deep Dive: Dad Jokes + 5 ASI-Sektionen
+- `quellen.html` — Methodik + alle 60 Fußnoten aggregiert
+- `vercel.json` — `cleanUrls: true` für `/roboter` statt `/roboter.html`
+- Three.js r128 via CDN (3D Hero, nur auf `index.html`)
 - Chart.js 4.4.0 via CDN (Visualisierungen)
 - Google Fonts: Fraunces (Display) + Plus Jakarta Sans (Body)
-- Dark/Light Theme via `data-theme` Attribut auf `<html>`
+
+Inhalte der Tiefen-Cluster sind zwischen Hub und jeweiliger Unterseite **dupliziert** (voll-und-Teaser-Modus). Bei Änderungen also beide Stellen anpassen.
 
 ## Design Tokens
 
-Warm-Dark Palette: `--color-bg: #0D0906`, Accent: `#FF6B35`, Surface: `#1E1411`.
-Light Theme invertiert. CSS Custom Properties in `:root`.
+Warm-Light Palette: `--color-bg: #FAFAF8`, Accent/Highlight: `#B93812`, Surface: `#FFFFFF`.
+CSS Custom Properties in `:root`. Aktuell single-theme (kein Dark-Mode).
 
 ## Konventionen
 
 - Deutsch für allen Content, Englisch für Code-Kommentare
 - Keine Emojis in UI-Elementen (Text-Emojis im Content sind OK als Stilmittel)
 - Quellen als Fußnoten mit Rückverweisen (`[↑]`)
+- Auf Subpages zeigen Footnote-Refs (`<sup>[X]</sup>`) auf `/quellen#fnX`; `[↑]` nutzt `history.back()`
 - Scroll-Animationen via `.reveal` Klasse + IntersectionObserver
 - Charts: Canvas-IDs `jobChart`, `medChart`, `unemploymentChart`
+- Subpages haben kein Three.js-Hero — stattdessen statisches Gradient (`.subpage-hero`)
+- Active-Nav-State via `data-page` Attribut auf `<html>` (gesetzt durch Inline-Script in `<body>`)
 
 ## Deployment
 
