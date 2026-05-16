@@ -1,4 +1,4 @@
-# CLAUDE.md — arbeitlos-ticket
+# CLAUDE.md — arbeitslos.tech
 
 ## Projekt
 
@@ -20,7 +20,7 @@ Inhalte der Tiefen-Cluster sind zwischen Hub und jeweiliger Unterseite **duplizi
 
 ## Design Tokens
 
-Warm-Light Palette: `--color-bg: #FAFAF8`, Accent/Highlight: `#B93812`, Surface: `#FFFFFF`.
+Warm-Light Palette: `--color-bg: #FAF9F7`, Accent/Highlight: `#C14817`, Surface: `#FFFFFF`.
 CSS Custom Properties in `:root`. Aktuell single-theme (kein Dark-Mode).
 
 ## Konventionen
@@ -37,9 +37,8 @@ CSS Custom Properties in `:root`. Aktuell single-theme (kein Dark-Mode).
 ## Deployment
 
 - **Vercel** — auto-deploy from `main` branch
-- **Team:** team_lzerLSOOXoO3cZdlpBhqA1MJ
-- **Repo:** VibeGoette/arbeitlos-ticket
-- **Domain:** arbeitlos-ticket.vercel.app
+- **Repo:** VibeGoette/arbeitslos-tech
+- **Domain:** arbeitslos.tech
 
 ## Git
 

@@ -1,4 +1,4 @@
-# arbeitlos-ticket
+# arbeitslos.tech
 
 **AI verändert alles. Schneller als du denkst.**
 
@@ -6,7 +6,7 @@ Interaktive Aufklärungsseite über die Auswirkungen von AI auf den Arbeitsmarkt
 
 ## Live
 
-[arbeitlos-ticket.vercel.app](https://arbeitlos-ticket.vercel.app)
+[arbeitslos.tech](https://arbeitslos.tech)
 
 ## Features
 
@@ -37,7 +37,7 @@ Interaktive Aufklärungsseite über die Auswirkungen von AI auf den Arbeitsmarkt
 ## Projektstruktur
 
 ```
-arbeitlos-ticket/
+arbeitslos-tech/
 ├── index.html          # Hub — volle Story als Scroll-Seite
 ├── roboter.html        # Deep Dive: Optimus, Pflege, Lawine (mit unemploymentChart)
 ├── medizin.html        # Deep Dive: Diagnose, Chirurgie, Salamitaktik (mit medChart)
@@ -59,7 +59,7 @@ Dateien anpassen.
 ## History
 
 - **v1** — "Basty macht sich Sorgen" — personalisierte Version für einen Freund
-- **v2** — "Arbeitlos-Ticket" — universalisiert, Open Source, für alle
+- **v2** — "arbeitslos.tech" — universalisiert, Open Source, für alle
 
 ## Autor
 
