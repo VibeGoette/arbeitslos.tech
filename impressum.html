@@ -173,8 +173,39 @@
       font-weight: 600;
       color: var(--color-text-primary);
       letter-spacing: -0.02em;
+      cursor: pointer;
+      position: relative;
     }
-    .nav-logo span { color: var(--color-highlight); }
+    .nav-logo span { 
+      color: var(--color-highlight);
+      display: inline-block;
+      animation: logoPulse 2.5s ease-in-out infinite;
+    }
+    .nav-logo::after {
+      content: '_';
+      color: var(--color-highlight);
+      animation: blink 1s step-end infinite;
+      margin-left: 1px;
+      font-weight: 400;
+    }
+    @keyframes logoPulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.7; transform: scale(1.1); }
+    }
+    @keyframes blink {
+      0%, 50% { opacity: 1; }
+      51%, 100% { opacity: 0; }
+    }
+    .nav-logo:hover {
+      animation: glitch 0.3s ease-in-out;
+    }
+    @keyframes glitch {
+      0%, 100% { transform: translate(0); filter: hue-rotate(0deg); }
+      20% { transform: translate(-2px, 1px); filter: hue-rotate(10deg); }
+      40% { transform: translate(2px, -1px); filter: hue-rotate(-10deg); }
+      60% { transform: translate(-1px, -1px); filter: hue-rotate(5deg); }
+      80% { transform: translate(1px, 1px); filter: hue-rotate(-5deg); }
+    }
 
     .nav-right { display: flex; align-items: center; gap: 20px; }
 

@@ -188,8 +188,39 @@
       font-weight: 700;
       color: var(--color-text-primary);
       letter-spacing: -0.025em;
+      cursor: pointer;
+      position: relative;
     }
-    .nav-logo span { color: var(--color-highlight); }
+    .nav-logo span { 
+      color: var(--color-highlight);
+      display: inline-block;
+      animation: logoPulse 2.5s ease-in-out infinite;
+    }
+    .nav-logo::after {
+      content: '_';
+      color: var(--color-highlight);
+      animation: blink 1s step-end infinite;
+      margin-left: 1px;
+      font-weight: 400;
+    }
+    @keyframes logoPulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.7; transform: scale(1.1); }
+    }
+    @keyframes blink {
+      0%, 50% { opacity: 1; }
+      51%, 100% { opacity: 0; }
+    }
+    .nav-logo:hover {
+      animation: glitch 0.3s ease-in-out;
+    }
+    @keyframes glitch {
+      0%, 100% { transform: translate(0); filter: hue-rotate(0deg); }
+      20% { transform: translate(-2px, 1px); filter: hue-rotate(10deg); }
+      40% { transform: translate(2px, -1px); filter: hue-rotate(-10deg); }
+      60% { transform: translate(-1px, -1px); filter: hue-rotate(5deg); }
+      80% { transform: translate(1px, 1px); filter: hue-rotate(-5deg); }
+    }
 
     .nav-right { display: flex; align-items: center; gap: 24px; }
 
@@ -2090,7 +2121,7 @@
           Ihr habt gar keinen Milliardär unter euren Kunden? Keinen Einzigen? Nicht einen? Kein?
         </p>
         <p style="color: var(--color-text-muted); font-size: 15px; line-height: 1.7; margin-bottom: 12px;">
-          Eure Kunden sind normale Leute. Leute mit Bürojobs. Leute mit Callcenter-Jobs. Leute mit Verwaltungsjobs. Genau die Leute, deren Jobs gerade verschwinden. Wenn deine Kundschaft kein Geld mehr hat — wen reparierst du dann? Einen Tesla, der sich selbst diagnostiziert? Einen Optimus, der keinen TÜV braucht?
+          Eure Kunden sind normale Leute. Leute mit B��rojobs. Leute mit Callcenter-Jobs. Leute mit Verwaltungsjobs. Genau die Leute, deren Jobs gerade verschwinden. Wenn deine Kundschaft kein Geld mehr hat — wen reparierst du dann? Einen Tesla, der sich selbst diagnostiziert? Einen Optimus, der keinen TÜV braucht?
         </p>
         <p style="color: var(--color-text-primary); font-size: 15px; line-height: 1.7; font-weight: 600;">
           Das KFZ-Handwerk stirbt nicht an Robotern. Es stirbt an Kunden, die sich keine Reparatur mehr leisten können — weil AI ihren Job übernommen hat.
