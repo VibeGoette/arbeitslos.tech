@@ -18,6 +18,8 @@
   
   <!-- Canonical -->
   <link rel="canonical" href="https://arbeitslos.tech/medizin">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -176,6 +178,7 @@
       cursor: pointer;
       position: relative;
     }
+    .nav-logo-img { height: 24px; width: auto; vertical-align: middle; margin-right: 8px; margin-top: -3px; }
     .nav-logo span { 
       color: var(--color-highlight);
       display: inline-block;
@@ -1576,6 +1579,14 @@
       .reveal { opacity: 1; transform: none; }
       .text-reveal .word { opacity: 1; transform: none; }
     }
+  
+    /* --- Sticker-System (Ghibli-Kawaii-Assets) --- */
+    .sticker { display:inline-block; pointer-events:none; user-select:none; -webkit-user-drag:none; filter:drop-shadow(0 8px 16px rgba(28,25,23,.16)); }
+    .sticker--float { animation:float-sticker 6s ease-in-out infinite; }
+    @keyframes float-sticker { 0%,100%{transform:translateY(0) rotate(-4deg);} 50%{transform:translateY(-10px) rotate(-2deg);} }
+    .sticker-scene { display:block; width:100%; height:auto; max-width:520px; margin:0 auto; }
+    .scene-wrap { display:flex; justify-content:center; margin:40px auto; }
+    @media (prefers-reduced-motion: reduce){ .sticker--float{animation:none;} }
   </style>
 </head>
 <body>
@@ -1602,7 +1613,7 @@
   <!-- Nav -->
   <nav class="nav" id="nav">
     <div class="nav-inner">
-      <div class="nav-logo">arbeitslos<span>.</span>tech</div>
+      <div class="nav-logo"><img src="/img/mascot-robot-head.png" alt="arbeitslos.tech Maskottchen" class="nav-logo-img" width="26" height="24">arbeitslos<span>.</span>tech</div>
       <div class="nav-right">
         <ul class="nav-links">
           <li><a href="/#was-passiert">Und dann?</a></li>
@@ -1614,6 +1625,7 @@
           <li><a class="subpage-link" data-page-key="roboter" href="/roboter">Roboter</a></li>
           <li><a class="subpage-link" data-page-key="medizin" href="/medizin">Medizin</a></li>
           <li><a class="subpage-link" data-page-key="asi" href="/asi">ASI</a></li>
+          <li><a class="subpage-link" data-page-key="seite2" href="/seite2" style="color:var(--color-highlight);font-weight:700;">Seite 2 →</a></li>
           <li><a class="subpage-link" data-page-key="quellen" href="/quellen">Quellen</a></li>
         </ul>
         <button class="hamburger" id="hamburger" aria-label="Menü öffnen">
@@ -1635,6 +1647,7 @@
       <li><a href="/roboter">Roboter &amp; Pflege</a></li>
       <li><a href="/medizin">Medizin-Revolution</a></li>
       <li><a href="/asi">ASI — Endgame</a></li>
+      <li><a href="/seite2">Seite 2 — Mythen</a></li>
       <li><a href="/quellen">Quellen &amp; Methodik</a></li>
     </ul>
   </div>
@@ -1906,6 +1919,7 @@
           <li><a href="/roboter">Roboter &amp; Pflege</a></li>
           <li><a href="/medizin">Medizin-Revolution</a></li>
           <li><a href="/asi">ASI — Endgame</a></li>
+          <li><a href="/seite2">Seite 2 — Mythen</a></li>
         </ul>
       </div>
       <div class="fs-col">

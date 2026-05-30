@@ -25,6 +25,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://arbeitslos.tech/seite2</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://arbeitslos.tech/quellen</loc>
     <lastmod>2026-05-06</lastmod>
     <changefreq>monthly</changefreq>

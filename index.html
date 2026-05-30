@@ -18,6 +18,8 @@
   
   <!-- Canonical -->
   <link rel="canonical" href="https://arbeitslos.tech">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -191,6 +193,7 @@
       cursor: pointer;
       position: relative;
     }
+    .nav-logo-img { height: 24px; width: auto; vertical-align: middle; margin-right: 8px; margin-top: -3px; }
     .nav-logo span { 
       color: var(--color-highlight);
       display: inline-block;
@@ -1614,6 +1617,17 @@
       .reveal { opacity: 1; transform: none; }
       .text-reveal .word { opacity: 1; transform: none; }
     }
+  
+    /* --- Sticker-System (Ghibli-Kawaii-Assets) --- */
+    .sticker { display:inline-block; pointer-events:none; user-select:none; -webkit-user-drag:none; filter:drop-shadow(0 8px 16px rgba(28,25,23,.16)); }
+    .sticker--float { animation:float-sticker 6s ease-in-out infinite; }
+    @keyframes float-sticker { 0%,100%{transform:translateY(0) rotate(-4deg);} 50%{transform:translateY(-10px) rotate(-2deg);} }
+    .sticker-scene { display:block; width:100%; height:auto; max-width:520px; margin:0 auto; }
+    .scene-wrap { display:flex; justify-content:center; margin:40px auto; }
+    @media (prefers-reduced-motion: reduce){ .sticker--float{animation:none;} }
+    .update-card .icon img { width:42px; height:42px; object-fit:contain; display:block; }
+    .hero-mascot { position:absolute; right:5%; bottom:7%; width:clamp(86px,11vw,158px); height:auto; z-index:1; }
+    @media (max-width:768px){ .hero-mascot { width:70px; right:5%; bottom:4%; opacity:.94; } }
   </style>
 </head>
 <body>
@@ -1640,7 +1654,7 @@
   <!-- Nav -->
   <nav class="nav" id="nav">
     <div class="nav-inner">
-      <div class="nav-logo">arbeitslos<span>.</span>tech</div>
+      <div class="nav-logo"><img src="/img/mascot-robot-head.png" alt="arbeitslos.tech Maskottchen" class="nav-logo-img" width="26" height="24">arbeitslos<span>.</span>tech</div>
       <div class="nav-right">
         <ul class="nav-links">
           <li><a href="/#was-passiert">Und dann?</a></li>
@@ -1689,6 +1703,7 @@
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
       </a>
     </div>
+    <img src="/img/mascot-robot.png" alt="" class="sticker sticker--float hero-mascot" width="158" height="211">
     <div class="hero-scroll-hint">
       <span>Scroll runter</span>
       <div class="arrow"></div>
@@ -1709,7 +1724,7 @@
 
       <div class="updates-grid">
         <div class="update-card glass-card tilt-card reveal reveal-delay-1">
-          <div class="icon">&#129504;</div>
+          <div class="icon"><img src="/img/icon-ai-chip.png" alt="" width="42" height="42"></div>
           <h3>AI liest jetzt ganze Bücher in 3 Sekunden.</h3>
           <p>700 Seiten. Komplett gelesen UND verstanden. 1 Million Wörter auf einmal. Das ist wie 10 Harry-Potter-Bände gleichzeitig. Kein Mensch kann das.</p>
           <span class="tag">Und dann?</span>
@@ -1723,21 +1738,21 @@
         </div>
 
         <div class="update-card glass-card tilt-card reveal reveal-delay-3">
-          <div class="icon">&#128188;</div>
+          <div class="icon"><img src="/img/icon-office-cubicle.png" alt="" width="42" height="42"></div>
           <h3>Sie arbeitet jetzt auf deinem Computer. Alleine.</h3>
           <p>Dokumente erstellen, Dateien sortieren, E-Mails vorbereiten, Tabellen auswerten. Ein unsichtbarer Bürokollege, der niemals schläft. Niemals krank ist. Niemals Urlaub will.</p>
           <span class="tag">Und dann?</span>
         </div>
 
         <div class="update-card glass-card tilt-card reveal reveal-delay-1">
-          <div class="icon">&#128274;</div>
+          <div class="icon"><img src="/img/icon-lock-security.png" alt="" width="42" height="42"></div>
           <h3>Sie hackt jetzt Software. Besser als Menschen.</h3>
           <p>In nur 2 Wochen 22 echte Sicherheitslücken in Firefox gefunden. 14 davon schwerwiegend. Der Browser, den Millionen nutzen. Von einer AI geknackt.</p>
           <span class="tag">UND DANN?</span>
         </div>
 
         <div class="update-card glass-card tilt-card reveal reveal-delay-2">
-          <div class="icon">&#128202;</div>
+          <div class="icon"><img src="/img/icon-forest-chart.png" alt="" width="42" height="42"></div>
           <h3>Sie erklärt dir die Welt. Visuell.</h3>
           <p>Diagramme, Charts, Analysen — nicht in Stunden, sondern in Sekunden. Sag einfach „Zeig mir das als Grafik." Fertig. Kein Excel. Kein Studium.</p>
           <span class="tag">UND DANN?!</span>
@@ -1750,6 +1765,7 @@
           <span class="tag" style="color: var(--color-danger); font-weight: 700;">KEIN UND DANN!</span>
         </div>
       </div>
+      <div class="scene-wrap reveal"><img src="/img/char-robot-office.png" alt="Ratloser Roboter im leeren Büro" class="sticker sticker-scene" width="480" height="400"></div>
     </div>
   </section>
 
@@ -2101,6 +2117,7 @@
       <div class="section-label reveal">Die unbequeme Wahrheit</div>
       <h2 class="section-title reveal">Die Computer klauen unsere Jobs —<br><em>diesmal wirklich</em></h2>
       <p class="section-subtitle reveal">Ja, diesen Satz haben wir schon tausendmal gehört. Diesmal ist es anders. Nicht weil die Technologie neu ist — sondern weil sie jetzt DENKARBEIT kann.</p>
+      <div class="scene-wrap reveal"><img src="/img/scene-hackt-besser.png" alt="Comic: Eine KI hackt Software — sie hackt besser als Menschen" class="sticker sticker-scene" width="500" height="500"></div>
 
       <div class="updates-grid">
         <div class="update-card glass-card tilt-card reveal reveal-delay-1">
@@ -3244,9 +3261,11 @@
   <section class="final-cta">
     <div class="container">
       <div class="section-label reveal">Das Allerwichtigste</div>
+      <img src="/img/mascot-sprout.png" alt="" class="sticker sticker--float" style="width:66px;height:auto;margin:10px auto 0;display:block;" width="66" height="77">
       <h2 class="section-title reveal">Diesmal betrifft es<br>den Kopf.</h2>
       <p class="section-subtitle reveal">Nicht die Hände. Den Kopf. Und dass du bis HIERHIN gelesen hast — durch Jobs, Roboter, Medizin, Pflege und eine gottverdammte Superintelligenz — zeigt: Deiner funktioniert noch. Benutz ihn.</p>
       <p class="section-subtitle reveal" style="margin-bottom: 36px; color: var(--color-text-warm); font-style: italic;">Mach dir Sorgen. Aber mach dir auch Mut. Und fang an.</p>
+      <div class="scene-wrap reveal"><img src="/img/scene-du-gehst-einkaufen.png" alt="Comic: Du gehst einkaufen — sie arbeitet weiter" class="sticker sticker-scene" width="500" height="512"></div>
       <a href="https://claude.ai" target="_blank" class="hero-cta reveal magnetic-btn" rel="noopener">
         AI selbst ausprobieren — bevor sie dich ausprobiert
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>

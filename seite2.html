@@ -12,6 +12,8 @@
   <meta property="og:locale" content="de_DE">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="https://arbeitslos.tech/seite2">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -89,6 +91,7 @@
     .nav.hidden { transform: translateY(-100%); }
     .nav-inner { max-width: var(--max-width); margin: 0 auto; padding: 0 clamp(20px, 5vw, 32px); display: flex; justify-content: space-between; align-items: center; }
     .nav-logo { font-family: var(--font-display); font-size: 17px; font-weight: 700; color: var(--color-text-primary); letter-spacing: -0.025em; cursor: pointer; text-decoration: none; }
+    .nav-logo-img { height: 24px; width: auto; vertical-align: middle; margin-right: 8px; margin-top: -3px; }
     .nav-logo span { color: var(--color-highlight); display: inline-block; animation: logoPulse 2.5s ease-in-out infinite; }
     .nav-logo::after { content: '_'; color: var(--color-highlight); animation: blink 1s step-end infinite; margin-left: 1px; font-weight: 400; }
     @keyframes logoPulse { 0%,100% { opacity:1; transform:scale(1); } 50% { opacity:0.7; transform:scale(1.1); } }
@@ -266,6 +269,14 @@
     ::selection { background: rgba(193,72,23,0.15); color: var(--color-text-primary); }
     @media (max-width: 768px) { .back-to-top { bottom: 20px; right: 20px; } }
     @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; } .reveal { opacity: 1; transform: none; } }
+  
+    /* --- Sticker-System (Ghibli-Kawaii-Assets) --- */
+    .sticker { display:inline-block; pointer-events:none; user-select:none; -webkit-user-drag:none; filter:drop-shadow(0 8px 16px rgba(28,25,23,.16)); }
+    .sticker--float { animation:float-sticker 6s ease-in-out infinite; }
+    @keyframes float-sticker { 0%,100%{transform:translateY(0) rotate(-4deg);} 50%{transform:translateY(-10px) rotate(-2deg);} }
+    .sticker-scene { display:block; width:100%; height:auto; max-width:520px; margin:0 auto; }
+    .scene-wrap { display:flex; justify-content:center; margin:40px auto; }
+    @media (prefers-reduced-motion: reduce){ .sticker--float{animation:none;} }
   </style>
 </head>
 <body>
@@ -273,7 +284,7 @@
 
   <nav class="nav" id="nav">
     <div class="nav-inner">
-      <a href="/" class="nav-logo">arbeitslos<span>.</span>tech</a>
+      <a href="/" class="nav-logo"><img src="/img/mascot-robot-head.png" alt="arbeitslos.tech Maskottchen" class="nav-logo-img" width="26" height="24">arbeitslos<span>.</span>tech</a>
       <div class="nav-right">
         <ul class="nav-links">
           <li><a href="/#was-passiert">Und dann?</a></li>
