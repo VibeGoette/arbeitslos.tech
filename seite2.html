@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seite 2 — Die Mythenjäger | arbeitslos.tech</title>
+  <meta name="description" content="Wir räumen auf: Alte Prognosen vs. Stand Mai 2026, die 7 größten KI-Mythen zerlegt, neue Studien, neue Zahlen — mit dem gewohnten Humor. Google Seite 2 war noch nie so unterhaltsam.">
+  <meta property="og:title" content="Seite 2 — Die Mythenjäger | arbeitslos.tech">
+  <meta property="og:description" content="Prognosen gecheckt, Mythen zerlegt, Studien nachgelegt. Stand: 30. Mai 2026.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://arbeitslos.tech/seite2">
+  <meta property="og:locale" content="de_DE">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://arbeitslos.tech/seite2">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,800;1,9..144,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --color-primary: #1A0F0A;
+      --color-secondary: #5C3618;
+      --color-accent: #8B5A2B;
+      --color-warm: #A67C52;
+      --color-highlight: #C14817;
+      --color-bg: #FAF9F7;
+      --color-bg-warm: #F5F0EB;
+      --color-surface: #FFFFFF;
+      --color-surface-light: #F2EDE8;
+      --color-text-primary: #1C1917;
+      --color-text-muted: #57534E;
+      --color-text-warm: #44403C;
+      --color-danger: #DC2626;
+      --color-success: #16A34A;
+      --color-glass: rgba(255,255,255,0.80);
+      --color-glass-border: rgba(28,25,23,0.06);
+      --nav-bg: rgba(250,249,247,0.92);
+      --font-display: 'Fraunces', serif;
+      --font-body: 'Plus Jakarta Sans', sans-serif;
+      --radius: 20px;
+      --radius-sm: 10px;
+      --radius-lg: 28px;
+      --spacing-section: clamp(80px, 12vw, 160px);
+      --max-width: 1140px;
+      --transition: cubic-bezier(0.16, 1, 0.3, 1);
+      --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
+      --shadow-md: 0 4px 12px rgba(0,0,0,0.06);
+      --shadow-lg: 0 12px 40px rgba(0,0,0,0.08);
+      --shadow-xl: 0 24px 64px rgba(0,0,0,0.12);
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-body);
+      background: var(--color-bg);
+      color: var(--color-text-primary);
+      line-height: 1.75;
+      font-size: clamp(16px, 1.05vw, 18px);
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      letter-spacing: -0.01em;
+    }
+
+    body::after {
+      content: '';
+      position: fixed; inset: 0; z-index: 9998;
+      pointer-events: none; opacity: 0.018;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      background-repeat: repeat; mix-blend-mode: multiply;
+    }
+
+    a { color: var(--color-highlight); text-decoration: none; transition: color 0.25s var(--transition); }
+    a:hover { color: var(--color-accent); }
+    .container { max-width: var(--max-width); margin: 0 auto; padding: 0 clamp(20px, 5vw, 32px); }
+
+    .scroll-progress { position: fixed; top: 0; left: 0; height: 2px; background: var(--color-highlight); z-index: 1001; width: 0%; will-change: width; }
+
+    .nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      padding: 24px 0;
+      transition: transform 0.5s var(--transition), background 0.4s var(--transition), padding 0.4s var(--transition), box-shadow 0.4s var(--transition);
+      background: transparent;
+    }
+    .nav.scrolled { background: var(--nav-bg); backdrop-filter: blur(20px) saturate(1.6); -webkit-backdrop-filter: blur(20px) saturate(1.6); padding: 14px 0; box-shadow: 0 1px 0 var(--color-glass-border); }
+    .nav.hidden { transform: translateY(-100%); }
+    .nav-inner { max-width: var(--max-width); margin: 0 auto; padding: 0 clamp(20px, 5vw, 32px); display: flex; justify-content: space-between; align-items: center; }
+    .nav-logo { font-family: var(--font-display); font-size: 17px; font-weight: 700; color: var(--color-text-primary); letter-spacing: -0.025em; cursor: pointer; text-decoration: none; }
+    .nav-logo span { color: var(--color-highlight); display: inline-block; animation: logoPulse 2.5s ease-in-out infinite; }
+    .nav-logo::after { content: '_'; color: var(--color-highlight); animation: blink 1s step-end infinite; margin-left: 1px; font-weight: 400; }
+    @keyframes logoPulse { 0%,100% { opacity:1; transform:scale(1); } 50% { opacity:0.7; transform:scale(1.1); } }
+    @keyframes blink { 0%,50% { opacity:1; } 51%,100% { opacity:0; } }
+
+    .nav-right { display: flex; align-items: center; gap: 24px; }
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a { color: var(--color-text-muted); font-size: 14px; font-weight: 500; transition: color 0.25s var(--transition); position: relative; }
+    .nav-links a::after { content: ''; position: absolute; bottom: -6px; left: 0; width: 0; height: 1.5px; background: var(--color-highlight); transition: width 0.35s var(--transition); }
+    .nav-links a:hover { color: var(--color-text-primary); }
+    .nav-links a:hover::after { width: 100%; }
+    .nav-links a.active { color: var(--color-highlight); }
+    .nav-links a.active::after { width: 100%; }
+    .nav-links .nav-divider { width: 1px; height: 18px; background: var(--color-glass-border); margin: 0 4px; align-self: center; list-style: none; }
+    .nav-links a.subpage-link { color: var(--color-text-warm); }
+    .nav-links a.subpage-link:hover { color: var(--color-highlight); }
+
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 8px; z-index: 110; }
+    .hamburger span { display: block; width: 24px; height: 2px; background: var(--color-text-primary); transition: all 0.3s var(--transition); border-radius: 2px; }
+    .hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px,5px); }
+    .hamburger.active span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+    .hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
+
+    .mobile-menu { position: fixed; inset: 0; z-index: 99; background: var(--nav-bg); backdrop-filter: blur(30px); -webkit-backdrop-filter: blur(30px); display: flex; align-items: center; justify-content: center; opacity: 0; visibility: hidden; transition: all 0.4s var(--transition); }
+    .mobile-menu.open { opacity: 1; visibility: visible; }
+    .mobile-menu ul { list-style: none; text-align: center; display: flex; flex-direction: column; gap: 24px; }
+    .mobile-menu a { font-family: var(--font-display); font-size: clamp(22px, 5vw, 34px); font-weight: 600; color: var(--color-text-primary); transition: all 0.3s; display: inline-block; }
+    .mobile-menu a:hover { color: var(--color-highlight); transform: translateX(8px); }
+    .mobile-menu .menu-divider { font-family: var(--font-body); font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-text-muted); padding: 16px 0 4px; list-style: none; opacity: 0.7; }
+
+    @media (max-width: 900px) { .nav-links { display: none; } .hamburger { display: flex; } }
+
+    .subpage-hero { position: relative; min-height: 72vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 120px 24px 80px; background: radial-gradient(ellipse at 30% 20%, rgba(193,72,23,0.07), transparent 60%), radial-gradient(ellipse at 70% 80%, rgba(149,90,40,0.09), transparent 55%), var(--color-bg); overflow: hidden; }
+    .subpage-hero .hero-content { max-width: 920px; position: relative; z-index: 2; }
+    .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(193,72,23,0.06); border: 1px solid rgba(193,72,23,0.12); color: var(--color-highlight); font-size: 12px; font-weight: 600; padding: 10px 20px; border-radius: 100px; margin-bottom: 36px; letter-spacing: 0.08em; text-transform: uppercase; }
+    .subpage-hero h1 { font-family: var(--font-display); font-size: clamp(38px, 7vw, 84px); font-weight: 800; line-height: 1.05; letter-spacing: -0.03em; color: var(--color-text-primary); margin-bottom: 24px; }
+    .subpage-hero h1 em { font-style: italic; font-weight: 400; color: var(--color-highlight); }
+    .subpage-hero .hero-sub { font-size: clamp(17px, 2vw, 21px); line-height: 1.65; color: var(--color-text-muted); max-width: 680px; margin: 0 auto 44px; }
+    .hero-cta { display: inline-flex; align-items: center; gap: 12px; background: var(--color-highlight); color: #fff; padding: clamp(14px,2vw,18px) clamp(28px,4vw,44px); border-radius: 100px; font-weight: 600; font-size: clamp(14px,1.1vw,16px); transition: all 0.4s var(--transition); cursor: pointer; border: none; text-decoration: none; position: relative; overflow: hidden; min-height: 52px; letter-spacing: -0.01em; box-shadow: 0 4px 24px rgba(193,72,23,0.25); }
+    .hero-cta:hover { transform: translateY(-4px) scale(1.02); box-shadow: 0 20px 48px rgba(193,72,23,0.3); color: #fff; }
+
+    section { padding: var(--spacing-section) 0; position: relative; }
+    .section-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.18em; color: var(--color-highlight); margin-bottom: 20px; }
+    .section-title { font-family: var(--font-display); font-size: clamp(30px, 5vw, 60px); font-weight: 800; line-height: 1.08; letter-spacing: -0.03em; margin-bottom: 24px; text-wrap: balance; }
+    .section-title em { font-style: italic; color: var(--color-highlight); font-weight: 600; }
+    .section-subtitle { font-size: clamp(16px, 1.5vw, 19px); color: var(--color-text-muted); line-height: 1.7; max-width: 640px; margin-bottom: 56px; }
+    .revolution-section { background: var(--color-bg-warm); }
+
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.9s var(--transition), transform 0.9s var(--transition); }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1 { transition-delay: 0.08s; } .reveal-delay-2 { transition-delay: 0.16s; } .reveal-delay-3 { transition-delay: 0.24s; } .reveal-delay-4 { transition-delay: 0.32s; }
+
+    .glass-card { background: var(--color-glass); backdrop-filter: blur(16px) saturate(1.3); -webkit-backdrop-filter: blur(16px) saturate(1.3); border: 1px solid var(--color-glass-border); border-radius: var(--radius); transition: all 0.5s var(--transition); }
+    .glass-card:hover { border-color: rgba(28,25,23,0.08); transform: translateY(-6px); box-shadow: var(--shadow-xl); }
+
+    .callout { background: var(--color-surface); border: 1px solid var(--color-glass-border); border-left: 2px solid var(--color-highlight); border-radius: var(--radius); padding: clamp(20px,3vw,28px) clamp(20px,3.5vw,32px); margin: clamp(28px,4vw,48px) 0; display: flex; gap: 16px; align-items: flex-start; font-size: clamp(14px,1vw,15px); color: var(--color-text-warm); line-height: 1.7; font-style: italic; transition: all 0.4s var(--transition); }
+    .callout:hover { transform: translateX(6px); box-shadow: var(--shadow-md); }
+    .callout-icon { font-size: 20px; flex-shrink: 0; line-height: 1; margin-top: 2px; }
+
+    .myth-grid { display: flex; flex-direction: column; gap: 28px; margin-top: 48px; }
+    .myth-card { background: var(--color-surface); border: 1px solid var(--color-glass-border); border-radius: var(--radius); overflow: hidden; transition: all 0.4s var(--transition); }
+    .myth-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+    .myth-header { display: flex; align-items: center; gap: 20px; padding: clamp(20px,3vw,28px) clamp(20px,3.5vw,32px); cursor: pointer; border-bottom: 1px solid transparent; transition: border-color 0.3s; }
+    .myth-card.open .myth-header { border-bottom-color: var(--color-glass-border); }
+    .myth-verdict { flex-shrink: 0; width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: 700; }
+    .verdict-busted { background: rgba(220,38,38,0.08); color: var(--color-danger); }
+    .verdict-partial { background: rgba(193,72,23,0.08); color: var(--color-highlight); }
+    .verdict-true { background: rgba(22,163,74,0.08); color: var(--color-success); }
+    .myth-title-wrap { flex: 1; }
+    .myth-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; margin-bottom: 4px; }
+    .myth-title { font-family: var(--font-display); font-size: clamp(17px,1.4vw,21px); font-weight: 700; color: var(--color-text-primary); line-height: 1.3; }
+    .myth-toggle { font-size: 18px; color: var(--color-text-muted); transition: transform 0.3s var(--transition); flex-shrink: 0; }
+    .myth-card.open .myth-toggle { transform: rotate(180deg); }
+    .myth-body { max-height: 0; overflow: hidden; transition: max-height 0.5s var(--transition), opacity 0.4s; opacity: 0; }
+    .myth-card.open .myth-body { opacity: 1; }
+    .myth-body-inner { padding: clamp(20px,3vw,28px) clamp(20px,3.5vw,32px); }
+    .myth-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px; }
+    .myth-col-old { background: rgba(220,38,38,0.03); border: 1px solid rgba(220,38,38,0.08); border-radius: var(--radius-sm); padding: 16px 20px; }
+    .myth-col-new { background: rgba(22,163,74,0.03); border: 1px solid rgba(22,163,74,0.08); border-radius: var(--radius-sm); padding: 16px 20px; }
+    .myth-col-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 8px; }
+    .myth-col-old .myth-col-label { color: var(--color-danger); }
+    .myth-col-new .myth-col-label { color: var(--color-success); }
+    .myth-col p { font-size: 14px; color: var(--color-text-muted); line-height: 1.65; }
+    .myth-verdict-text { font-size: 15px; color: var(--color-text-warm); line-height: 1.7; }
+    .myth-source { font-size: 12px; color: var(--color-text-muted); margin-top: 12px; font-style: italic; }
+    @media (max-width: 600px) { .myth-row { grid-template-columns: 1fr; } }
+
+    .prognose-grid { display: flex; flex-direction: column; gap: 16px; margin-top: 40px; }
+    .prognose-row { display: flex; align-items: flex-start; gap: 20px; background: var(--color-surface); border: 1px solid var(--color-glass-border); border-radius: var(--radius-sm); padding: 20px 24px; transition: all 0.3s var(--transition); }
+    .prognose-row:hover { transform: translateX(4px); box-shadow: var(--shadow-sm); }
+    .prognose-status { flex-shrink: 0; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 16px; margin-top: 2px; }
+    .status-check { background: rgba(22,163,74,0.1); }
+    .status-cross { background: rgba(220,38,38,0.1); }
+    .status-partial { background: rgba(193,72,23,0.1); }
+    .prognose-content { flex: 1; }
+    .prognose-source { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-text-muted); margin-bottom: 4px; }
+    .prognose-claim { font-family: var(--font-display); font-size: clamp(15px,1.2vw,17px); font-weight: 600; color: var(--color-text-primary); margin-bottom: 8px; line-height: 1.4; }
+    .prognose-reality { font-size: 14px; color: var(--color-text-muted); line-height: 1.65; }
+    .prognose-badge { display: inline-block; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; padding: 3px 10px; border-radius: 20px; margin-top: 8px; }
+    .badge-eingetroffen { background: rgba(22,163,74,0.1); color: var(--color-success); }
+    .badge-daneben { background: rgba(220,38,38,0.1); color: var(--color-danger); }
+    .badge-teilweise { background: rgba(193,72,23,0.1); color: var(--color-highlight); }
+
+    .stat-row { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; margin: 40px 0; }
+    .stat-card { text-align: center; padding: clamp(24px,3vw,36px) 20px; }
+    .stat-number { font-family: var(--font-display); font-size: clamp(32px,5vw,56px); font-weight: 800; color: var(--color-highlight); margin-bottom: 10px; letter-spacing: -0.03em; }
+    .stat-label { color: var(--color-text-muted); font-size: clamp(12px,0.9vw,13px); line-height: 1.6; }
+    @media (max-width: 600px) { .stat-row { grid-template-columns: 1fr; } }
+
+    .updates-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap: 20px; margin-top: 40px; }
+    .update-card { padding: 32px; }
+    .update-card .icon { width: 52px; height: 52px; background: rgba(193,72,23,0.05); border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 24px; margin-bottom: 20px; transition: transform 0.4s var(--transition), background 0.4s var(--transition); }
+    .update-card:hover .icon { transform: scale(1.08) rotate(-4deg); background: rgba(193,72,23,0.09); }
+    .update-card h3 { font-family: var(--font-display); font-size: clamp(16px,1.3vw,19px); font-weight: 700; margin-bottom: 12px; letter-spacing: -0.02em; }
+    .update-card p { color: var(--color-text-muted); font-size: clamp(13px,0.95vw,14px); line-height: 1.7; }
+    .update-card .tag { display: inline-block; background: rgba(193,72,23,0.06); color: var(--color-highlight); font-size: 10px; font-weight: 700; padding: 5px 12px; border-radius: 100px; margin-top: 16px; text-transform: uppercase; letter-spacing: 0.06em; }
+
+    .impact-list { list-style: none; margin: 20px 0; display: flex; flex-direction: column; gap: 10px; }
+    .impact-list li { background: var(--color-glass); backdrop-filter: blur(10px); border: 1px solid var(--color-glass-border); border-radius: var(--radius-sm); padding: 14px 18px; display: flex; gap: 12px; align-items: flex-start; font-size: 14px; line-height: 1.6; color: var(--color-text-muted); transition: all 0.3s var(--transition); }
+    .impact-list li:hover { border-color: rgba(26,15,10,0.08); transform: translateX(4px); background: rgba(193,72,23,0.025); }
+    .impact-list li strong { color: var(--color-text-primary); font-weight: 600; }
+    .impact-list .li-icon { font-size: 16px; flex-shrink: 0; margin-top: 1px; }
+
+    .sub-heading { font-family: var(--font-display); font-size: clamp(19px,2.2vw,26px); font-weight: 700; margin-bottom: 14px; margin-top: clamp(40px,5vw,72px); }
+    .sub-intro { color: var(--color-text-muted); font-size: 15px; line-height: 1.7; margin-bottom: 28px; max-width: 680px; }
+
+    .glow-divider { width: 100%; height: 1px; background: linear-gradient(90deg, transparent, var(--color-highlight), transparent); opacity: 0.2; }
+
+    .epic-quote { font-family: var(--font-display); font-size: clamp(22px,3.5vw,44px); font-weight: 800; line-height: 1.2; text-align: center; letter-spacing: -0.02em; padding: clamp(56px,7vw,100px) 24px; }
+    .epic-quote span { color: var(--color-highlight); }
+
+    .plot-twist-card { padding: clamp(24px,3.5vw,40px); border-left: 4px solid var(--color-danger); background: linear-gradient(135deg, var(--color-surface), var(--color-bg-warm)); }
+    .plot-twist-label { font-size: 10px; text-transform: uppercase; letter-spacing: 0.15em; color: var(--color-danger); font-weight: 700; margin-bottom: 12px; }
+    .plot-twist-headline { font-family: var(--font-display); font-size: clamp(18px,2.3vw,26px); font-weight: 800; color: var(--color-text-primary); line-height: 1.3; margin-bottom: 14px; }
+
+    .footnotes { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--color-glass-border); }
+    .footnotes h4 { font-family: var(--font-display); font-size: 16px; font-weight: 600; color: var(--color-text-warm); margin-bottom: 16px; }
+    .footnotes ol { list-style: decimal; padding-left: 20px; display: flex; flex-direction: column; gap: 7px; }
+    .footnotes li { font-size: 12px; color: var(--color-text-muted); line-height: 1.6; }
+    .footnotes a { color: var(--color-accent); word-break: break-all; }
+    .footnotes li:target { background: rgba(193,72,23,0.07); border-left: 3px solid var(--color-highlight); padding-left: 10px; }
+    sup a { color: var(--color-highlight); font-weight: 700; font-size: 11px; text-decoration: none; }
+    sup a:hover { text-decoration: underline; }
+
+    footer { padding: 48px 24px; text-align: center; border-top: 1px solid var(--color-glass-border); background: var(--color-bg); }
+    footer p { color: var(--color-text-muted); font-size: 13px; }
+    footer a { color: var(--color-highlight); }
+    .footer-sitemap { display: grid; grid-template-columns: repeat(3,1fr); gap: 28px; max-width: var(--max-width); margin: 0 auto 32px; padding: 40px 24px 24px; border-bottom: 1px solid var(--color-glass-border); text-align: left; }
+    .footer-sitemap h5 { font-family: var(--font-body); font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-text-muted); font-weight: 600; margin-bottom: 12px; }
+    .footer-sitemap ul { list-style: none; }
+    .footer-sitemap li { margin-bottom: 7px; }
+    .footer-sitemap a { color: var(--color-text-warm); font-size: 14px; transition: color 0.2s; }
+    .footer-sitemap a:hover { color: var(--color-highlight); }
+    @media (max-width: 720px) { .footer-sitemap { grid-template-columns: 1fr; gap: 20px; } }
+
+    .back-to-top { position: fixed; bottom: 32px; right: 32px; width: 50px; height: 50px; border-radius: 50%; background: var(--color-surface); border: 1px solid var(--color-glass-border); color: var(--color-text-primary); font-size: 18px; cursor: pointer; display: flex; align-items: center; justify-content: center; z-index: 90; opacity: 0; transform: translateY(16px); transition: all 0.5s var(--transition); pointer-events: none; box-shadow: var(--shadow-md); }
+    .back-to-top.visible { opacity: 1; transform: translateY(0); pointer-events: all; }
+    .back-to-top:hover { background: var(--color-highlight); border-color: var(--color-highlight); color: #fff; transform: translateY(-3px); box-shadow: 0 12px 32px rgba(193,72,23,0.25); }
+
+    .data-table { width: 100%; border-collapse: separate; border-spacing: 0; margin-top: 28px; font-size: clamp(12px,0.95vw,14px); }
+    .data-table th { font-family: var(--font-display); font-weight: 700; font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-highlight); text-align: left; padding: 10px 14px; border-bottom: 2px solid var(--color-glass-border); background: var(--color-glass); }
+    .data-table td { padding: 13px 14px; border-bottom: 1px solid var(--color-glass-border); color: var(--color-text-muted); vertical-align: top; }
+    .data-table tr:hover td { background: rgba(193,72,23,0.02); }
+    .data-table .col-main { color: var(--color-text-primary); font-weight: 600; }
+    .data-table .col-highlight { color: var(--color-highlight); font-weight: 700; }
+    .data-table .col-good { color: var(--color-success); font-weight: 600; }
+    .data-table .col-bad { color: var(--color-danger); font-weight: 600; }
+
+    .prev-next { max-width: var(--max-width); margin: 60px auto 0; padding: 28px 24px; display: flex; justify-content: space-between; gap: 16px; border-top: 1px solid var(--color-glass-border); }
+    .prev-next a { flex: 1; max-width: 48%; padding: 16px 20px; background: var(--color-surface); border: 1px solid var(--color-glass-border); border-radius: var(--radius); text-decoration: none; color: var(--color-text-primary); font-weight: 500; transition: all 0.25s var(--transition); display: flex; flex-direction: column; gap: 4px; }
+    .prev-next a:hover { border-color: var(--color-highlight); transform: translateY(-2px); }
+    .prev-next .label { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-text-muted); font-weight: 500; }
+    .prev-next .next { text-align: right; }
+
+    ::selection { background: rgba(193,72,23,0.15); color: var(--color-text-primary); }
+    @media (max-width: 768px) { .back-to-top { bottom: 20px; right: 20px; } }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; } .reveal { opacity: 1; transform: none; } }
+  </style>
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">arbeitslos<span>.</span>tech</a>
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="/#was-passiert">Und dann?</a></li>
+          <li><a href="/#revolution">Warum anders</a></li>
+          <li><a href="/#jobs">Dein Job</a></li>
+          <li><a href="/#alltag">Dein Alltag</a></li>
+          <li><a href="/#handeln">Handeln</a></li>
+          <li class="nav-divider"></li>
+          <li><a class="subpage-link" href="/roboter">Roboter</a></li>
+          <li><a class="subpage-link" href="/medizin">Medizin</a></li>
+          <li><a class="subpage-link" href="/asi">ASI</a></li>
+          <li><a class="subpage-link active" href="/seite2">Seite 2</a></li>
+          <li><a class="subpage-link" href="/quellen">Quellen</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Menü öffnen">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="/#was-passiert">Und dann?</a></li>
+      <li><a href="/#revolution">Warum anders</a></li>
+      <li><a href="/#jobs">Dein Job</a></li>
+      <li><a href="/#alltag">Dein Alltag</a></li>
+      <li><a href="/#handeln">Handeln</a></li>
+      <li class="menu-divider">Deep Dive</li>
+      <li><a href="/roboter">Roboter &amp; Pflege</a></li>
+      <li><a href="/medizin">Medizin-Revolution</a></li>
+      <li><a href="/asi">ASI — Endgame</a></li>
+      <li><a href="/seite2">Seite 2 — Mythen</a></li>
+      <li><a href="/quellen">Quellen &amp; Methodik</a></li>
+    </ul>
+  </div>
+
+  <header class="subpage-hero">
+    <div class="hero-content">
+      <div class="hero-badge reveal">Google-Suchergebnis Seite 2 — Stand: 30. Mai 2026</div>
+      <h1 class="reveal">Willkommen auf <em>Seite 2.</em><br>Hier wohnen die Mythen.</h1>
+      <p class="hero-sub reveal">Auf Seite 1 haben wir dir gesagt was passiert. Auf Seite 2 räumen wir mit dem auf, was du glaubst zu wissen. Alte Prognosen gecheckt, neue Studien eingebaut, sieben Mythen zerlegt — mit Humor, Belegen und der üblichen Dreistigkeit.</p>
+      <a href="#prognosen" class="hero-cta reveal">
+        Mythen zerlegen
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+      </a>
+    </div>
+  </header>
+
+  <div class="glow-divider"></div>
+
+  <!-- SECTION 1: PROGNOSEN-CHECK -->
+  <section id="prognosen">
+    <div class="container">
+      <div class="section-label reveal">Kapitel 1</div>
+      <h2 class="section-title reveal">Alte Prognosen<br>vs. <em>harte Realität 2026</em></h2>
+      <p class="section-subtitle reveal">Wir haben die großen Vorhersagen aus 2023–2025 ausgegraben und gecheckt: Was ist eingetroffen? Was war Hype? Was ist komplizierter als gedacht? Die Ergebnisse sind mal schockierend richtig — und mal schockierend falsch.</p>
+
+      <div class="callout reveal">
+        <span class="callout-icon">🤖</span>
+        <p>Ehrlich gesagt: Prognosen über KI zu machen ist wie Wettervorhersage mit einem nassen Finger. Alle tun's, keiner hat Recht. Außer uns natürlich. Rückblickend.</p>
+      </div>
+
+      <div class="prognose-grid">
+
+        <div class="prognose-row reveal">
+          <div class="prognose-status status-check">✓</div>
+          <div class="prognose-content">
+            <div class="prognose-source">WEF Future of Jobs Report 2023</div>
+            <div class="prognose-claim">„Bis 2027 werden 26% der Kernaufgaben durch Maschinen übernommen"</div>
+            <div class="prognose-reality">Eingetroffen — und sogar früher. 2026 zeigt der Indeed-Report: KI-Anforderungen in Stellenanzeigen sind in HR um 139%, im Marketing um 123% gestiegen. Die Aufgaben wandern. Die Jobs noch nicht vollständig. Aber der Trend ist unübersehbar.<sup><a href="#fn2-1" id="ref2-1">[1]</a></sup></div>
+            <span class="prognose-badge badge-eingetroffen">Eingetroffen</span>
+          </div>
+        </div>
+
+        <div class="prognose-row reveal">
+          <div class="prognose-status status-cross">✗</div>
+          <div class="prognose-content">
+            <div class="prognose-source">Sam Altman / OpenAI, 2023</div>
+            <div class="prognose-claim">„AGI kommt 2025–2026"</div>
+            <div class="prognose-reality">Nein. Oder vielleicht. Kommt drauf an, wie du AGI definierst. Laut einer Anthropic-Census-Bureau-Studie nutzen erst 9,7% der US-Firmen KI in der Produktion. Die Modelle sind beeindruckend — aber AGI im Sinne von „versteht alles, kann alles" ist weiterhin nicht da. Was wir haben: sehr gute Spezial-KI. Das ist nicht dasselbe.<sup><a href="#fn2-2" id="ref2-2">[2]</a></sup></div>
+            <span class="prognose-badge badge-daneben">Daneben</span>
+          </div>
+        </div>
+
+        <div class="prognose-row reveal">
+          <div class="prognose-status status-partial">~</div>
+          <div class="prognose-content">
+            <div class="prognose-source">Goldman Sachs 2023</div>
+            <div class="prognose-claim">„300 Millionen Jobs weltweit gefährdet durch KI"</div>
+            <div class="prognose-reality">Teilweise. Die Transformation läuft — aber langsamer als die Schlagzeile vermuten ließ. Der Deloitte Tech Trends Report 2026 zeigt: 80% der KI-Pilotprojekte in Unternehmen skalieren nicht. KI verdrängt Aufgaben, nicht ganze Stellen auf einmal. Dafür: 53.000 Tech-Entlassungen in den ersten Monaten 2026, während KI-Stellen um 130% wuchsen. Es ist ein Umbau, kein Big Bang.<sup><a href="#fn2-3" id="ref2-3">[3]</a></sup></div>
+            <span class="prognose-badge badge-teilweise">Teilweise</span>
+          </div>
+        </div>
+
+        <div class="prognose-row reveal">
+          <div class="prognose-status status-cross">✗</div>
+          <div class="prognose-content">
+            <div class="prognose-source">Elon Musk / Tesla, 2023</div>
+            <div class="prognose-claim">„Optimus wird 2025 externe Verkäufe erreichen"</div>
+            <div class="prognose-reality">Nein. Optimus Gen 3 existiert, sammelt Trainingsdaten in Tesla-Fabriken — aber Musk selbst sagte Anfang 2026: „Die Roboter verrichten noch keine nützliche Arbeit." Externe Verkäufe? Vielleicht 2027/28. Musks Timelines sind historisch 2–4 Jahre zu optimistisch.<sup><a href="#fn2-4" id="ref2-4">[4]</a></sup></div>
+            <span class="prognose-badge badge-daneben">Daneben</span>
+          </div>
+        </div>
+
+        <div class="prognose-row reveal">
+          <div class="prognose-status status-check">✓</div>
+          <div class="prognose-content">
+            <div class="prognose-source">McKinsey Global Institute, 2023</div>
+            <div class="prognose-claim">„Generative KI könnte bis zu 30% der Arbeitszeit ersetzen"</div>
+            <div class="prognose-reality">Eingetroffen. In Deutschland hat sich die KI-Nutzung am Arbeitsplatz 2025/26 von 19% auf 38% verdoppelt (McKinsey HR-Monitor 2026). 30% Arbeitszeit-Substitution ist nicht fantasiert — es ist gelebter Alltag in Marketingabteilungen und HR-Teams.<sup><a href="#fn2-5" id="ref2-5">[5]</a></sup></div>
+            <span class="prognose-badge badge-eingetroffen">Eingetroffen</span>
+          </div>
+        </div>
+
+        <div class="prognose-row reveal">
+          <div class="prognose-status status-partial">~</div>
+          <div class="prognose-content">
+            <div class="prognose-source">Dario Amodei / Anthropic, 2024</div>
+            <div class="prognose-claim">„KI übernimmt in 6–12 Monaten die Mehrheit der Software-Engineering-Aufgaben"</div>
+            <div class="prognose-reality">Teilweise — mit Fußnote. Bei Anthropic selbst werden 70–90% des Codes KI-assistiert generiert. Aber Junior-Stellen schrumpfen (15–27% IT-Firmen bauen ab), während Senior-Engineering wächst. KI ersetzt den Einstieg, nicht den Beruf.<sup><a href="#fn2-6" id="ref2-6">[6]</a></sup></div>
+            <span class="prognose-badge badge-teilweise">Teilweise</span>
+          </div>
+        </div>
+
+        <div class="prognose-row reveal">
+          <div class="prognose-status status-check">✓</div>
+          <div class="prognose-content">
+            <div class="prognose-source">LinkedIn Economic Graph, Jan. 2026</div>
+            <div class="prognose-claim">„KI schafft mehr neue Jobs als es zerstört"</div>
+            <div class="prognose-reality">Stand Mai 2026: 1,3 Millionen neue KI-Jobs weltweit laut LinkedIn-Daten. Head of AI und KI-Entwickler führen das Ranking der Trend-Jobs in Deutschland an. Das klingt gut — bis man merkt, dass die neuen Jobs andere Skills, andere Orte und andere Menschen brauchen als die verdrängten.<sup><a href="#fn2-7" id="ref2-7">[7]</a></sup></div>
+            <span class="prognose-badge badge-eingetroffen">Eingetroffen (mit Aber)</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="callout reveal" style="margin-top:40px;">
+        <span class="callout-icon">📊</span>
+        <p>Zusammenfassung: KI transformiert schneller als die meisten dachten — aber in anderer Form. Nicht Apokalypse, nicht Friede-Freude-Eierkuchen. Ein chaotischer, ungleicher Umbau. Und wer „das geht mich nichts an" denkt, unterschätzt genau das.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="glow-divider"></div>
+
+  <!-- SECTION 2: NEUE ZAHLEN 2026 -->
+  <section class="revolution-section">
+    <div class="container">
+      <div class="section-label reveal">Kapitel 2</div>
+      <h2 class="section-title reveal">Neue Zahlen,<br><em>frisch aus 2026</em></h2>
+      <p class="section-subtitle reveal">Seit der letzten Seite hat sich einiges getan. Hier kommen die Daten, die du noch nicht kennst — direkt aus aktuellen Studien und Reports vom Frühjahr 2026.</p>
+
+      <div class="stat-row">
+        <div class="stat-card glass-card reveal reveal-delay-1">
+          <div class="stat-number">38%</div>
+          <div class="stat-label">der deutschen Beschäftigten nutzen 2026 regelmäßig KI-Tools am Arbeitsplatz — verdoppelt gegenüber 2025 (McKinsey HR-Monitor 2026)<sup><a href="#fn2-8" id="ref2-8">[8]</a></sup></div>
+        </div>
+        <div class="stat-card glass-card reveal reveal-delay-2">
+          <div class="stat-number">53k</div>
+          <div class="stat-label">Tech-Beschäftigte entlassen in den ersten Monaten 2026, während KI-Stellenanzeigen gleichzeitig um +130% stiegen — der gespaltene Markt<sup><a href="#fn2-9" id="ref2-9">[9]</a></sup></div>
+        </div>
+        <div class="stat-card glass-card reveal reveal-delay-3">
+          <div class="stat-number">14%</div>
+          <div class="stat-label">der deutschen Unternehmen verbieten ihren Mitarbeitern KI-Nutzung komplett — während die Konkurrenz schläft<sup><a href="#fn2-10" id="ref2-10">[10]</a></sup></div>
+        </div>
+      </div>
+
+      <div class="updates-grid" style="margin-top: 48px;">
+        <div class="update-card glass-card reveal reveal-delay-1">
+          <div class="icon">📈</div>
+          <h3>Der k-förmige Arbeitsmarkt</h3>
+          <p>Erstmals 10.000+ KI-Stellenangebote pro Quartal in Deutschland — während E-Commerce, Industrie-4.0 und klassische Softwarejobs weiter einbrechen. Oben geht's rauf, unten geht's runter.<sup><a href="#fn2-11" id="ref2-11">[11]</a></sup></p>
+          <span class="tag">FAZ Jobmonitor Apr. 2026</span>
+        </div>
+        <div class="update-card glass-card reveal reveal-delay-2">
+          <div class="icon">🎓</div>
+          <h3>75% der Firmen testen KI-Skills</h3>
+          <p>Bis 2027 werden laut Gartner 75% aller Einstellungsverfahren KI-Kompetenz-Tests beinhalten. Gleichzeitig: 50% führen „KI-freie" Tests ein — weil kritisches Denken sonst verkümmert.<sup><a href="#fn2-12" id="ref2-12">[12]</a></sup></p>
+          <span class="tag">Gartner IT Symposium 2025</span>
+        </div>
+        <div class="update-card glass-card reveal reveal-delay-3">
+          <div class="icon">🏢</div>
+          <h3>20% flachere Hierarchien durch KI</h3>
+          <p>Bis Ende 2026 nutzen 20% der Organisationen KI, um Hierarchien abzuflachen. Mehr als die Hälfte der Middle-Management-Positionen könnten wegfallen — KI macht die Koordination selbst.<sup><a href="#fn2-13" id="ref2-13">[13]</a></sup></p>
+          <span class="tag">Gartner Strategic Predictions</span>
+        </div>
+        <div class="update-card glass-card reveal reveal-delay-1">
+          <div class="icon">👶</div>
+          <h3>Berufseinsteiger unter Druck</h3>
+          <p>WEF-Briefing Januar 2026: KI verändert frühe Karrieren fundamental. Einstiegsjobs, die früher Lernerfahrungen lieferten, werden von KI übernommen. Junge Menschen verlieren den klassischen Karriereeinstieg — nicht die gesamte Karriere.<sup><a href="#fn2-14" id="ref2-14">[14]</a></sup></p>
+          <span class="tag">WEF Entry-Level Briefing 2026</span>
+        </div>
+        <div class="update-card glass-card reveal reveal-delay-2">
+          <div class="icon">🌀</div>
+          <h3>Spirale bis 2028?</h3>
+          <p>Ein viel diskutiertes Gedankenexperiment (Euronews, Feb. 2026): KI-Entlassungen könnten eine Spirale aus höherer Arbeitslosigkeit, sinkendem Konsum und sozialen Unruhen auslösen — wenn keine politischen Gegenmaßnahmen kommen.<sup><a href="#fn2-15" id="ref2-15">[15]</a></sup></p>
+          <span class="tag">Euronews / Feb. 2026</span>
+        </div>
+        <div class="update-card glass-card reveal reveal-delay-3">
+          <div class="icon">🇩🇪</div>
+          <h3>DIW: Männer und Frauen gleich betroffen</h3>
+          <p>Das DIW-Wochenbericht April 2026 widerlegt den Mythos, dass KI-Transformation Frauen stärker trifft. Das Transformationspotenzial trifft Männer und Frauen ähnlich — entlang von Berufen, nicht Geschlechtern.<sup><a href="#fn2-16" id="ref2-16">[16]</a></sup></p>
+          <span class="tag">DIW Wochenbericht Apr. 2026</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="glow-divider"></div>
+
+  <!-- SECTION 3: 7 MYTHEN -->
+  <section id="mythen">
+    <div class="container">
+      <div class="section-label reveal">Kapitel 3 — Das Herzstück</div>
+      <h2 class="section-title reveal">Die 7 größten KI-Mythen<br><em>— zerlegt, gewürzt, serviert</em></h2>
+      <p class="section-subtitle reveal">Von „KI nimmt alle Jobs" bis „Die KI lügt nie" — hier kommen die hartnäckigsten Falschaussagen. Jeder Mythos bekommt seinen fairen Prozess. Und sein Urteil.</p>
+
+      <div class="callout reveal">
+        <span class="callout-icon">⚖️</span>
+        <p>Gerichtssession eröffnet. Richter: Datenlage. Verteidiger: gesunder Menschenverstand. Ankläger: Realität Stand 30. Mai 2026. Angeklagte: sieben hartnäckige Mythen. Ruhig im Saal, bitte.</p>
+      </div>
+
+      <div class="myth-grid">
+
+        <div class="myth-card reveal" id="myth1">
+          <div class="myth-header" onclick="toggleMyth('myth1')">
+            <div class="myth-verdict verdict-busted">✗</div>
+            <div class="myth-title-wrap">
+              <div class="myth-label" style="color:var(--color-danger);">Urteil: Busted</div>
+              <div class="myth-title">„KI nimmt allen den Job weg"</div>
+            </div>
+            <div class="myth-toggle">▼</div>
+          </div>
+          <div class="myth-body" id="myth1-body">
+            <div class="myth-body-inner">
+              <div class="myth-row">
+                <div class="myth-col myth-col-old">
+                  <div class="myth-col-label">Die Angst</div>
+                  <p>Roboter übernehmen. Kein Mensch hat mehr Arbeit. Massenhaftes Grundeinkommen oder Chaos.</p>
+                </div>
+                <div class="myth-col myth-col-new">
+                  <div class="myth-col-label">Die Realität</div>
+                  <p>KI ersetzt Aufgaben, nicht Berufe. Jede Technologie-Revolution hat netto neue Jobs geschaffen. Diesmal dauert der Übergang nur kürzer.</p>
+                </div>
+              </div>
+              <p class="myth-verdict-text">Der hartnäckigste aller Mythen. Die Wahrheit: Laut LinkedIn-Daten hat KI bis Anfang 2026 bereits 1,3 Millionen neue Jobs geschaffen.<sup><a href="#fn2-7">[7]</a></sup> Gleichzeitig verschwinden alte. Das Netto ist unklar. Was klar ist: Der Übergang trifft nicht alle gleich. Wer 2026 in Dateneingabe oder Call-Center sitzt und KI ignoriert, hat ein Problem. Wer KI nutzt, ist produktiver als je zuvor. KI ist kein Jobkiller — sie ist ein Jobsortierer. Mit erschreckend schlechtem Timing.</p>
+              <p class="myth-source">Quellen: LinkedIn Economic Graph Jan. 2026 · WEF Future of Jobs Report 2025 · ISG Enterprise AI Report 2025</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="myth-card reveal" id="myth2">
+          <div class="myth-header" onclick="toggleMyth('myth2')">
+            <div class="myth-verdict verdict-busted">✗</div>
+            <div class="myth-title-wrap">
+              <div class="myth-label" style="color:var(--color-danger);">Urteil: Busted</div>
+              <div class="myth-title">„KI ist immer zuverlässig und macht keine Fehler"</div>
+            </div>
+            <div class="myth-toggle">▼</div>
+          </div>
+          <div class="myth-body" id="myth2-body">
+            <div class="myth-body-inner">
+              <div class="myth-row">
+                <div class="myth-col myth-col-old">
+                  <div class="myth-col-label">Der Glaube</div>
+                  <p>KI googelt für mich, KI schreibt für mich, KI entscheidet für mich — und macht das immer richtig.</p>
+                </div>
+                <div class="myth-col myth-col-new">
+                  <div class="myth-col-label">Das Problem</div>
+                  <p>KI halluziniert. Sie erfindet Fakten, Quellen, Zahlen — überzeugend formuliert und sachlich falsch.</p>
+                </div>
+              </div>
+              <p class="myth-verdict-text">Das ECRI hat 2026 KI-Chatbot-Missbrauch zur Gesundheitsgefahr Nr. 1 erklärt: Patienten fragen ChatGPT statt Ärzte und handeln danach.<sup><a href="#fn2-17" id="ref2-17">[17]</a></sup> In Unternehmen: Nur 31% der KI-Use-Cases erreichen laut ISG volle Produktionsreife. Warum? Weil die Systeme in kontrollierten Tests perfekt sind — und in der Realität halluzinieren, Kontext missverstehen, Korrelationen mit Kausalität verwechseln. KI ist kein Orakel. Sie ist ein extrem leistungsfähiges Autocomplete. Mit gelegentlichem Hang zur Erfindung.</p>
+              <div class="callout" style="margin:16px 0 0;">
+                <span class="callout-icon">🤖</span>
+                <p>„Die KI sagt, der Bahnhof öffnet um 7 Uhr." — Tut er nicht. Die KI hat das schön formuliert geraten. Verifizier deine KI-Outputs. Immer. Ohne Ausnahme.</p>
+              </div>
+              <p class="myth-source">Quellen: ECRI Top 10 Safety Concerns 2026 · ISG Enterprise AI Report 2025 · AI Reality Check Podcast 2026</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="myth-card reveal" id="myth3">
+          <div class="myth-header" onclick="toggleMyth('myth3')">
+            <div class="myth-verdict verdict-partial">~</div>
+            <div class="myth-title-wrap">
+              <div class="myth-label" style="color:var(--color-highlight);">Urteil: Kompliziert</div>
+              <div class="myth-title">„Handwerk ist sicher — das kann keine KI"</div>
+            </div>
+            <div class="myth-toggle">▼</div>
+          </div>
+          <div class="myth-body" id="myth3-body">
+            <div class="myth-body-inner">
+              <div class="myth-row">
+                <div class="myth-col myth-col-old">
+                  <div class="myth-col-label">Die Hoffnung</div>
+                  <p>Elektriker, Klempner, Maurer — das kann ein Roboter nie. Menschen brauchen immer Handwerker.</p>
+                </div>
+                <div class="myth-col myth-col-new">
+                  <div class="myth-col-label">Die Realität</div>
+                  <p>Stimmt für 2026. Gilt nicht für 2030. Die eigentliche Bedrohung kommt von einer anderen Seite.</p>
+                </div>
+              </div>
+              <p class="myth-verdict-text">Handwerker sterben nicht an Robotern — sie sterben an Kunden, die sich keine Reparatur mehr leisten können, weil deren Jobs weg sind. Das ist der Sekundäreffekt, den die meisten übersehen. Außerdem: KI-gestützte DIY-Anleitungen per AR-Brille machen einfache Reparaturen selbstmachbar. OBI und Hornbach testen bereits KI-Beratung.<sup><a href="#fn2-18" id="ref2-18">[18]</a></sup> Der Profi-Handwerker für Spezialarbeiten? Sicher. Der Allround-Handwerker für Tropfhähne und Ikea-Aufbau? Kämpft mit DIY 2.0.</p>
+              <p class="myth-source">Quellen: ZDH Digitalisierung im Handwerk 2025 · Google Research AR-assisted Repair · McKinsey Future of Construction 2025</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="myth-card reveal" id="myth4">
+          <div class="myth-header" onclick="toggleMyth('myth4')">
+            <div class="myth-verdict verdict-busted">✗</div>
+            <div class="myth-title-wrap">
+              <div class="myth-label" style="color:var(--color-danger);">Urteil: Busted</div>
+              <div class="myth-title">„Deutschland ist beim KI-Einsatz vorne dabei"</div>
+            </div>
+            <div class="myth-toggle">▼</div>
+          </div>
+          <div class="myth-body" id="myth4-body">
+            <div class="myth-body-inner">
+              <div class="myth-row">
+                <div class="myth-col myth-col-old">
+                  <div class="myth-col-label">Die Selbstwahrnehmung</div>
+                  <p>Deutschland ist Ingenieursland. Bei Digitalisierung sind wir immer vorn. KI läuft bei uns natürlich auch gut.</p>
+                </div>
+                <div class="myth-col myth-col-new">
+                  <div class="myth-col-label">Die Wahrheit</div>
+                  <p>38% Nutzung klingt gut — bis man sieht: 14% der deutschen Unternehmen verbieten KI komplett. China hat 49% der Firmen mit formalem KI-Training.</p>
+                </div>
+              </div>
+              <p class="myth-verdict-text">Gute Nachrichten: In Deutschland hat sich KI-Nutzung am Arbeitsplatz von 19% auf 38% verdoppelt (McKinsey 2026).<sup><a href="#fn2-5">[5]</a></sup> Schlechte Nachrichten: Nur 28% der Unternehmen bieten formales KI-Training an. 14% verbieten KI aktiv. Der ifo-Institut-Report zeigt: Nur jeder Fünfte nutzt KI regelmäßig — zwei Drittel eigeninitiativ, nicht weil der Arbeitgeber drauf setzte.<sup><a href="#fn2-19" id="ref2-19">[19]</a></sup> Deutschlands KI-Strategie ist halb-offiziell, halb zufällig.</p>
+              <p class="myth-source">Quellen: McKinsey HR-Monitor 2026 · ifo Institut DiWaBe 2.0 Studie Jan. 2026 · Indeed Jobs &amp; Hiring Outlook 2026</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="myth-card reveal" id="myth5">
+          <div class="myth-header" onclick="toggleMyth('myth5')">
+            <div class="myth-verdict verdict-partial">~</div>
+            <div class="myth-title-wrap">
+              <div class="myth-label" style="color:var(--color-highlight);">Urteil: Zu vereinfacht</div>
+              <div class="myth-title">„Kreativität bleibt sicher — KI kann nicht wirklich kreativ sein"</div>
+            </div>
+            <div class="myth-toggle">▼</div>
+          </div>
+          <div class="myth-body" id="myth5-body">
+            <div class="myth-body-inner">
+              <div class="myth-row">
+                <div class="myth-col myth-col-old">
+                  <div class="myth-col-label">Die Überzeugung</div>
+                  <p>Kreativität ist menschlich. KI kopiert, kombiniert, simuliert — echte Kreativität mit Intention und Emotion? Nur Menschen.</p>
+                </div>
+                <div class="myth-col myth-col-new">
+                  <div class="myth-col-label">Das Problem</div>
+                  <p>Für 80% der Kunden ist der KI-Output gut genug. Der Markt zahlt für „gut genug" — nicht für Intentionalität.</p>
+                </div>
+              </div>
+              <p class="myth-verdict-text">Philosophisch stimmt es: KI „versteht" Kreativität nicht, sie simuliert Muster. Aber in Marketing und Content stieg die KI-Nachfrage in Stellenanzeigen 2025 um 123%.<sup><a href="#fn2-20" id="ref2-20">[20]</a></sup> Das bedeutet: billige Kreativität stirbt. Wer Standardtexte schrieb oder durchschnittliche Werbung machte: Problem. Wer mit Intention, Haltung und Kundenwissen arbeitet: Nachfrage steigt sogar. KI demokratisiert schlechte Kreativität und macht gute Kreativität wertvoller.</p>
+              <div class="callout" style="margin:16px 0 0;">
+                <span class="callout-icon">🤖</span>
+                <p>Fun Fact: KI kann 14.000 Bilder pro Sekunde generieren. Crocs hätte sie niemals erfunden. Manche menschlichen Fehler sind schützenswertes Kulturgut.</p>
+              </div>
+              <p class="myth-source">Quellen: Indeed Jobs &amp; Hiring Report 2026 · DevDigest AI Reality 2026 · Gartner Strategic Predictions 2025</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="myth-card reveal" id="myth6">
+          <div class="myth-header" onclick="toggleMyth('myth6')">
+            <div class="myth-verdict verdict-busted">✗</div>
+            <div class="myth-title-wrap">
+              <div class="myth-label" style="color:var(--color-danger);">Urteil: Gefährlich falsch</div>
+              <div class="myth-title">„Wenn die KI es sagt, stimmt es"</div>
+            </div>
+            <div class="myth-toggle">▼</div>
+          </div>
+          <div class="myth-body" id="myth6-body">
+            <div class="myth-body-inner">
+              <div class="myth-row">
+                <div class="myth-col myth-col-old">
+                  <div class="myth-col-label">Das Verhalten</div>
+                  <p>ChatGPT sagt, ich brauche dieses Medikament. Google sagt mein Ausschlag ist Krebs. Die KI hat doch nie Unrecht.</p>
+                </div>
+                <div class="myth-col myth-col-new">
+                  <div class="myth-col-label">Die Realität</div>
+                  <p>ECRI 2026: KI-Chatbot-Missbrauch durch Patienten ist die Nr. 1 Patientensicherheitsgefahr des Jahres.</p>
+                </div>
+              </div>
+              <p class="myth-verdict-text">Das ist nicht nur ein Problem für Hypochonder. KI-Modelle halluzinieren — also erfinden sie überzeugend klingende Fakten, Studien und Diagnosen. Bei harmlosen Fragen: ärgerlich. Bei medizinischen, rechtlichen und finanziellen Entscheidungen: gefährlich. Die Lösung ist nicht weniger KI — sie ist KI mit Verifikationspflicht. Jede wichtige Aussage einer KI muss durch eine Primärquelle bestätigt werden. Ja, auch die hier. Besonders die hier.<sup><a href="#fn2-21" id="ref2-21">[21]</a></sup></p>
+              <p class="myth-source">Quellen: ECRI Top 10 Patient Safety Concerns 2026 · MIT Study on LLM Hallucination Rates 2025 · Spektrum der Wissenschaft: KI und Mythen 2024</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="myth-card reveal" id="myth7">
+          <div class="myth-header" onclick="toggleMyth('myth7')">
+            <div class="myth-verdict verdict-true">✓</div>
+            <div class="myth-title-wrap">
+              <div class="myth-label" style="color:var(--color-success);">Urteil: Stimmt — leider</div>
+              <div class="myth-title">„Es reicht, wenn ich warte und schaue, was passiert"</div>
+            </div>
+            <div class="myth-toggle">▼</div>
+          </div>
+          <div class="myth-body" id="myth7-body">
+            <div class="myth-body-inner">
+              <div class="myth-row">
+                <div class="myth-col myth-col-old">
+                  <div class="myth-col-label">Die Strategie</div>
+                  <p>Abwarten. Den Hype aussitzen. War schon immer so. Irgendwie geht's immer weiter. Das hier ist auch nur eine Phase.</p>
+                </div>
+                <div class="myth-col myth-col-new">
+                  <div class="myth-col-label">Das Ergebnis</div>
+                  <p>Funktioniert — bis es nicht mehr funktioniert. Das Zeitfenster für Anpassung ist real und schrumpft gerade.</p>
+                </div>
+              </div>
+              <p class="myth-verdict-text">Abwarten funktioniert tatsächlich — für einen Teil der Menschen. Wer in einem stabilen Job mit unverzichtbaren menschlichen Skills sitzt, kann warten. Wer in einer Branche arbeitet, die KI schon jetzt transformiert, kann das nicht. Der Unterschied zum letzten Technologiewandel: Das Zeitfenster ist kürzer. Wer 2000 bei Digitalisierung abgewartet hat, hatte bis 2010. Wer 2024 bei KI abgewartet hat, hat vielleicht bis 2027. Und „warten" ist eine aktive Entscheidung mit Konsequenzen.<sup><a href="#fn2-22" id="ref2-22">[22]</a></sup></p>
+              <div class="callout" style="margin:16px 0 0;">
+                <span class="callout-icon">🤖</span>
+                <p>Disclaimer: Dieser Mythos ist der Einzige, der stimmt — und trotzdem falsch ist. Magie des Lebens.</p>
+              </div>
+              <p class="myth-source">Quellen: WEF Jobs &amp; Skills Transformation Davos 2026 · Anthropic Economic Impact Study 2025 · IAB Forschungsbericht 2025</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="glow-divider"></div>
+
+  <div class="epic-quote reveal">
+    Die Lüge ist schnell.<br>Die Wahrheit ist <span>komplizierter</span>.<br>Und viel interessanter.
+  </div>
+
+  <div class="glow-divider"></div>
+
+  <!-- SECTION 4: PLOT TWISTS -->
+  <section class="revolution-section">
+    <div class="container">
+      <div class="section-label reveal">Kapitel 4</div>
+      <h2 class="section-title reveal">Was wirklich neu ist —<br><em>seit der letzten Seite</em></h2>
+      <p class="section-subtitle reveal">Manche Dinge haben sich fundamental verändert. Nicht graduelle Updates — echte Kurswechsel. Hier sind die drei größten.</p>
+
+      <div class="glass-card plot-twist-card reveal" style="margin-bottom:24px;">
+        <div class="plot-twist-label">Plot Twist Nr. 1</div>
+        <div class="plot-twist-headline">KI-Adoption bremst — nicht wegen Technologie, sondern wegen Menschen</div>
+        <p style="color:var(--color-text-muted);font-size:15px;line-height:1.7;margin-bottom:12px;">Gartner projiziert 2,52 Billionen Dollar weltweite KI-Ausgaben 2026 — ein Plus von 44%. Und trotzdem: Nur 9,7% der US-Firmen nutzen KI produktiv. 80% der Enterprise-Pilotprojekte skalieren nie. Das größte Hindernis ist nicht die Technologie — es sind fehlende Skills, Datenchaos und Angst vor Change.<sup><a href="#fn2-23" id="ref2-23">[23]</a></sup></p>
+        <p style="color:var(--color-text-primary);font-size:15px;line-height:1.7;font-weight:600;">Konsequenz: Wer KI lernt, hat einen riesigen Vorsprung — nicht trotz des Hypes, sondern weil er trotz des Hypes real ist.</p>
+      </div>
+
+      <div class="glass-card plot-twist-card reveal" style="margin-bottom:24px;">
+        <div class="plot-twist-label">Plot Twist Nr. 2</div>
+        <div class="plot-twist-headline">Der gespaltene Markt: Oben explodiert, unten bricht ein</div>
+        <p style="color:var(--color-text-muted);font-size:15px;line-height:1.7;margin-bottom:12px;">2026 zeigt: Der Arbeitsmarkt ist k-förmig. KI-Stellen wachsen um 130%. Klassische Digital-Jobs — E-Commerce-Manager, Standard-Programmierer, Content-Koordinatoren — brechen ein. Dazwischen gibt es wenig. Du bist entweder auf dem steigenden Ast oder auf dem fallenden.<sup><a href="#fn2-11">[11]</a></sup></p>
+        <p style="color:var(--color-text-primary);font-size:15px;line-height:1.7;font-weight:600;">Die bequeme Mitte verschwindet. Kein Weg drumherum. Die Frage ist nur: nach oben oder nach unten?</p>
+      </div>
+
+      <div class="glass-card plot-twist-card reveal">
+        <div class="plot-twist-label">Plot Twist Nr. 3</div>
+        <div class="plot-twist-headline">Agentic AI verändert gerade alles — und kaum jemand redet drüber</div>
+        <p style="color:var(--color-text-muted);font-size:15px;line-height:1.7;margin-bottom:12px;">2023–2025 waren die Jahre der Chat-KI. 2026 ist das Jahr der Agentic AI — Systeme, die nicht mehr nur antworten, sondern selbstständig handeln. E-Mails schreiben, Kalender buchen, Code deployen, Einkäufe tätigen. Aber erst 6% der Firmen haben agentic AI skaliert. Der Sturm kommt — er ist noch nicht angekommen.<sup><a href="#fn2-24" id="ref2-24">[24]</a></sup></p>
+        <p style="color:var(--color-text-primary);font-size:15px;line-height:1.7;font-weight:600;">Das Chatbot-Paradigma ist vorbei. AI-Agenten übernehmen Prozesse, nicht Prompts. Wer das noch nicht versteht, lernt es 2027 auf die harte Tour.</p>
+      </div>
+
+      <div class="callout reveal" style="margin-top:40px;">
+        <span class="callout-icon">🤖</span>
+        <p>„Hast du schon einen KI-Agenten?" — „Ich hab einen Assistenten, der mir die Schuhe bindet." — „Das ist nicht dasselbe." — „Doch. Er macht auch Fehler."</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="glow-divider"></div>
+
+  <!-- SECTION 5: STUDIENLAGE TABELLE -->
+  <section>
+    <div class="container">
+      <div class="section-label reveal">Kapitel 5 — Referenz</div>
+      <h2 class="section-title reveal">Die wichtigsten Studien<br><em>auf einen Blick</em></h2>
+      <p class="section-subtitle reveal">Keine Wall of Text. Eine Tabelle. Studien, Kernaussagen, Status — damit du beim nächsten Tischgespräch über KI nicht zitierst, was du auf Reddit gelesen hast.</p>
+
+      <div class="glass-card reveal" style="padding:0;overflow:hidden;">
+        <div style="overflow-x:auto;">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Studie / Quelle</th>
+                <th>Kernaussage</th>
+                <th>Status Mai 2026</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="col-main">WEF Future of Jobs 2025</span><br><small>World Economic Forum</small></td>
+                <td>92 Mio. Jobs verdrängt, 170 Mio. neue bis 2030. Netto: +78 Mio.</td>
+                <td class="col-highlight">Gültig, Timing umstritten</td>
+              </tr>
+              <tr>
+                <td><span class="col-main">McKinsey HR-Monitor 2026</span><br><small>März 2026</small></td>
+                <td>KI-Nutzung in DE von 19% auf 38% verdoppelt. Nur 28% der Firmen mit formalem Training.</td>
+                <td class="col-good">Aktuell &amp; prüfbar</td>
+              </tr>
+              <tr>
+                <td><span class="col-main">ifo Institut DiWaBe 2.0</span><br><small>Jan. 2026</small></td>
+                <td>Nur jeder 5. nutzt KI regelmäßig. 64% haben es versucht. 2/3 eigeninitiativ.</td>
+                <td class="col-good">Aktuell, repräsentativ (9.800 Interviews)</td>
+              </tr>
+              <tr>
+                <td><span class="col-main">Indeed Jobs &amp; Hiring 2026</span><br><small>Jan. 2026</small></td>
+                <td>KI-Stellen in HR +139%, Marketing +123%, Banking +101% gegenüber 2024.</td>
+                <td class="col-good">Aktuell &amp; prüfbar</td>
+              </tr>
+              <tr>
+                <td><span class="col-main">ECRI Top 10 Safety Concerns</span><br><small>2026</small></td>
+                <td>KI-Chatbot-Missbrauch durch Patienten ist Gesundheitsgefahr Nr. 1.</td>
+                <td class="col-bad">Warnung — gilt weiterhin</td>
+              </tr>
+              <tr>
+                <td><span class="col-main">Anthropic-Census Bureau Study</span><br><small>2025</small></td>
+                <td>9,7% US-Firmen nutzen KI produktiv. Konzentriert in Tech (20%+) und Finance.</td>
+                <td class="col-highlight">Zeigt Adoptionslücke klar</td>
+              </tr>
+              <tr>
+                <td><span class="col-main">Gartner IT Symposium Predictions</span><br><small>2025/2026</small></td>
+                <td>75% Einstellungen mit KI-Tests bis 2027. 20% der Firmen flachen Hierarchien ab.</td>
+                <td class="col-highlight">Prognose, läuft ein</td>
+              </tr>
+              <tr>
+                <td><span class="col-main">DIW Wochenbericht Nr. 14</span><br><small>Apr. 2026</small></td>
+                <td>KI-Transformation trifft Männer und Frauen gleich — Berufe entscheiden, nicht Geschlecht.</td>
+                <td class="col-good">Aktuell &amp; prüfbar</td>
+              </tr>
+              <tr>
+                <td><span class="col-main">FAZ Jobmonitor</span><br><small>Apr. 2026</small></td>
+                <td>Erstmals 10.000+ KI-Stellen/Quartal in DE. E-Commerce und Softwarejobs rückläufig.</td>
+                <td class="col-good">Aktuell &amp; prüfbar</td>
+              </tr>
+              <tr>
+                <td><span class="col-main">JobIntel.ai Analyse</span><br><small>Mai 2026</small></td>
+                <td>53.000 Tech-Entlassungen 2026 YTD. KI-Hiring-Boom +130%. Gespaltener Markt.</td>
+                <td class="col-good">Aktuell Mai 2026</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="callout reveal" style="margin-top:40px;">
+        <span class="callout-icon">📖</span>
+        <p>Alle hier zitierten Studien sind öffentlich zugänglich oder haben Primärquellen. Auf der <a href="/quellen">Quellenseite</a> findest du alle 70+ Fußnoten mit direkten Links. Weil transparente Quellen keine Option sind — sie sind das Minimum.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="glow-divider"></div>
+
+  <!-- SECTION 6: WAS TUN -->
+  <section class="revolution-section" id="handeln">
+    <div class="container">
+      <div class="section-label reveal">Kapitel 6 — Das Fazit</div>
+      <h2 class="section-title reveal">Was du jetzt tust —<br><em>Updated für 2026</em></h2>
+      <p class="section-subtitle reveal">Seite 1 hat dir gesagt, was passiert. Seite 2 hat Prognosen gecheckt und Mythen zerlegt. Jetzt die Frage aller Fragen: Na und?</p>
+
+      <div class="updates-grid">
+        <div class="update-card glass-card reveal reveal-delay-1">
+          <div class="icon">🔧</div>
+          <h3>KI-Skills sind Pflicht — nicht Option</h3>
+          <p>75% der Firmen testen bis 2027 KI-Kompetenz im Bewerbungsgespräch. Wer jetzt anfängt: Vorsprung. Wer wartet: kämpft gegen Menschen mit einem Jahres-Vorsprung. Einstieg: ChatGPT, Perplexity, Claude. 30 Minuten täglich. Reicht für den Anfang.</p>
+          <span class="tag">Jetzt</span>
+        </div>
+        <div class="update-card glass-card reveal reveal-delay-2">
+          <div class="icon">🎯</div>
+          <h3>Spezialisierung statt Breite</h3>
+          <p>Der k-förmige Markt belohnt Tiefe. Wer alles ein bisschen kann, fällt in die Mitte — und die verschwindet. Wer ein konkretes Problem für einen konkreten Markt mit KI-Unterstützung löst, gewinnt.</p>
+          <span class="tag">Strategie</span>
+        </div>
+        <div class="update-card glass-card reveal reveal-delay-3">
+          <div class="icon">🧠</div>
+          <h3>Kritisches Denken ist dein Moat</h3>
+          <p>50% der Firmen führen „KI-freie" Tests ein. Kritisches Denken wird durch KI wertvoller. Nutze KI für Recherche, Entwürfe, Analyse — aber urteile selbst. Immer.</p>
+          <span class="tag">Kompetenz</span>
+        </div>
+        <div class="update-card glass-card reveal reveal-delay-1">
+          <div class="icon">📡</div>
+          <h3>Agentic AI verstehen — jetzt</h3>
+          <p>2026 ist das Jahr, in dem AI-Agenten produktionsreif werden. Wer jetzt lernt, wie Agenten funktionieren, Workflows automatisiert und Prozesse orchestriert — der ist 2027 derjenige, den alle fragen.</p>
+          <span class="tag">Next Level</span>
+        </div>
+      </div>
+
+      <div class="callout reveal" style="margin-top:40px;">
+        <span class="callout-icon">🤖</span>
+        <p>Und falls du jetzt denkst: „Das ist alles viel zu viel" — stimmt. Es ist viel. Aber du hast bis hierher gelesen. Das ist mehr als 90% der Leute da draußen tun. Kopf hoch. Oder zumindest: Laptop auf.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="glow-divider"></div>
+
+  <!-- QUELLEN VOR FOOTER -->
+  <section id="quellenverzeichnis">
+    <div class="container">
+      <div class="section-label reveal">Quellen &amp; Nachweise</div>
+      <h2 class="section-title reveal" style="font-size: clamp(24px, 3.5vw, 40px);">Alle Belege —<br><em>prüfbar, transparent, vollständig</em></h2>
+      <p class="section-subtitle reveal" style="margin-bottom:32px;">Seite 2 steht für überprüfbares Wissen. Keine unbelegten Behauptungen. Jede Zahl hat eine Quelle. Jede Quelle ist benannt.</p>
+
+      <div class="footnotes reveal" id="fn-main">
+        <h4>Fußnoten &amp; Quellen dieser Seite</h4>
+        <ol>
+          <li id="fn2-1"><a href="#ref2-1">↑</a> Indeed Jobs &amp; Hiring Outlook Report 2026 — KI-Kompetenz in Stellenanzeigen Deutschland. <a href="https://www.it-business.de/ki-veraendert-den-jobmarkt-flaechendeckend-a-f7aed131c41aab41c4bbc99d812ac5dc/" target="_blank" rel="noopener">it-business.de, Jan. 2026</a></li>
+          <li id="fn2-2"><a href="#ref2-2">↑</a> Anthropic-Census Bureau Joint Study on AI Firm Adoption, August 2025 — 9.7% US-Firmen in Produktion. Zitiert in: <a href="https://thoughtsofmuskan.in/stories/ai-adoption-slower-than-expected-2026-hype-vs-reality" target="_blank" rel="noopener">AI Adoption Slower Than Expected 2026</a></li>
+          <li id="fn2-3"><a href="#ref2-3">↑</a> Deloitte Tech Trends 2026 — AI Hype vs. Deployment Gap. <a href="https://quasa.io/media/ai-hype-vs-reality-deloitte-s-tech-trends-2026-exposes-the-gap-between-talk-and-deployment" target="_blank" rel="noopener">quasa.io, Feb. 2026</a> · ISG Enterprise AI Report 2025</li>
+          <li id="fn2-4"><a href="#ref2-4">↑</a> Tesla AI Day 2025 / Elon Musk Bloomberg Interview März 2026 — Optimus sammelt Trainingsdaten, keine nützliche Arbeit laut eigener Aussage.</li>
+          <li id="fn2-5"><a href="#ref2-5">↑</a> McKinsey HR-Monitor 2026 — KI-Nutzung Deutschland verdoppelt auf 38%. <a href="https://www.zeit.de/news/2026-03/18/ki-am-arbeitsplatz-deutschland-holt-deutlich-auf" target="_blank" rel="noopener">Zeit.de / McKinsey, März 2026</a></li>
+          <li id="fn2-6"><a href="#ref2-6">↑</a> Anthropic CEO Dario Amodei, Bloomberg Interview 2026 — 70–90% KI-generierter Code bei Anthropic. JobIntel.ai, Mai 2026</li>
+          <li id="fn2-7"><a href="#ref2-7">↑</a> LinkedIn Economic Graph — AI has added 1.3 million new jobs. <a href="https://www.weforum.org/stories/2026/01/ai-has-already-added-1-3-million-new-jobs-according-to-linkedin-data/" target="_blank" rel="noopener">WEF.org, Jan. 2026</a></li>
+          <li id="fn2-8"><a href="#ref2-8">↑</a> McKinsey HR-Monitor 2026 — 38% regelmäßige KI-Nutzung, 16% täglich, 14% Unternehmen mit Verbot.</li>
+          <li id="fn2-9"><a href="#ref2-9">↑</a> JobIntel.ai — Tech-Entlassungen vs. KI-Hiring-Boom 2026. <a href="https://jobintel.ai/de/blog/tech-layoffs-vs-ai-hiring-boom-2026" target="_blank" rel="noopener">jobintel.ai, Mai 2026</a></li>
+          <li id="fn2-10"><a href="#ref2-10">↑</a> McKinsey HR-Monitor 2026 — 14% der deutschen Unternehmen verbieten KI-Nutzung komplett.</li>
+          <li id="fn2-11"><a href="#ref2-11">↑</a> FAZ Jobmonitor April 2026 — K-förmige Arbeitsmarktentwicklung: 10.000+ KI-Stellen/Quartal. <a href="https://www.faz.net/premium/digitalwirtschaft/kuenstliche-intelligenz/kuenstliche-intelligenz-verdraengt-digitaljobs-trends-2026" target="_blank" rel="noopener">FAZ.net, Apr. 2026</a></li>
+          <li id="fn2-12"><a href="#ref2-12">↑</a> Gartner IT Symposium/Xpo Strategic Predictions 2025 — 75% KI-Tests, 50% KI-freie Tests. <a href="https://www.all-ai.de/news/news24/ki-jobs-2026" target="_blank" rel="noopener">all-ai.de, Okt. 2025</a></li>
+          <li id="fn2-13"><a href="#ref2-13">↑</a> Gartner 2025 — 20% der Organisationen flachen Hierarchien durch KI ab. Über 50% Middle-Management gefährdet.</li>
+          <li id="fn2-14"><a href="#ref2-14">↑</a> WEF Briefing: How AI is Changing Early Careers, January 2026. <a href="https://reports.weforum.org/docs/WEF_Briefing_AI_and_Entry-Level_Jobs_January_2026.pdf" target="_blank" rel="noopener">WEF PDF, Jan. 2026</a></li>
+          <li id="fn2-15"><a href="#ref2-15">↑</a> Euronews Next — Gedankenexperiment: KI löst bis 2028 sozialen und wirtschaftlichen Umbruch aus. <a href="https://de.euronews.com/next/2026/02/26/gedankenexperiment-warnt-ki-lost-bis-2028-sozialen-und-wirtschaftlichen-umbruch-aus" target="_blank" rel="noopener">euronews.com, Feb. 2026</a></li>
+          <li id="fn2-16"><a href="#ref2-16">↑</a> DIW Wochenbericht Nr. 14/2026 — Transformationspotenzial durch KI: Männer und Frauen gleich betroffen. <a href="https://www.diw.de/de/diw_01.c.1004064.de/publikationen/wochenberichte/2026_14_1/transformationspotenzial_durch_ki_betrifft_ebenso_maenner_wie_frauen.html" target="_blank" rel="noopener">DIW Berlin, Apr. 2026</a></li>
+          <li id="fn2-17"><a href="#ref2-17">↑</a> ECRI — Top 10 Patient Safety Concerns 2026: AI Chatbot Misuse #1.</li>
+          <li id="fn2-18"><a href="#ref2-18">↑</a> ZDH Digitalisierung im Handwerk 2025 · Google Research Blog — Project Astra AR-assisted Repair 2025.</li>
+          <li id="fn2-19"><a href="#ref2-19">↑</a> ifo Institut — DiWaBe 2.0 Studie, 9.800 Interviews. <a href="https://www.ifo.de/pressemitteilung/2026-01-05/nur-jeder-fuenfte-beschaeftigte-nutzt-ki-regelmaessig" target="_blank" rel="noopener">ifo.de, Jan. 2026</a></li>
+          <li id="fn2-20"><a href="#ref2-20">↑</a> Indeed Jobs &amp; Hiring Outlook 2026 — KI-Nachfrage im Marketing +123%, HR +139%.</li>
+          <li id="fn2-21"><a href="#ref2-21">↑</a> ECRI Top 10 Safety Concerns 2026 · MIT Hallucination Study 2025 · Spektrum.de: KI und Verschwörungsmythen 2024</li>
+          <li id="fn2-22"><a href="#ref2-22">↑</a> WEF Davos 2026: Jobs and Skills Transformation. IAB Forschungsbericht 2025: Szenarien für den Übergang.</li>
+          <li id="fn2-23"><a href="#ref2-23">↑</a> Gartner 2026: $2.52 Trillion AI Spending Projection. Anthropic-Census Bureau: 9.7% Adoption. ISG: 80% Pilot Scaleup Failure Rate. <a href="https://thoughtsofmuskan.in/stories/ai-adoption-slower-than-expected-2026-hype-vs-reality" target="_blank" rel="noopener">Vollständige Analyse, März 2026</a></li>
+          <li id="fn2-24"><a href="#ref2-24">↑</a> Lucidworks Survey 2026 — 71% Gen AI eingeführt, nur 6% skalierte Agentic AI. <a href="https://www.faf.ae/home/2026/1/4/the-intelligence-reckoning-artificial-intelligences-brutal-collision-with-reality-in-2026" target="_blank" rel="noopener">FAF Analysis, Jan. 2026</a></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <div class="glow-divider"></div>
+
+  <div class="prev-next reveal">
+    <a href="/">
+      <span class="label">← Zurück</span>
+      <span>Startseite</span>
+    </a>
+    <a href="/quellen" class="next">
+      <span class="label">Weiter →</span>
+      <span>Quellen &amp; Methodik</span>
+    </a>
+  </div>
+
+  <footer>
+    <div class="footer-sitemap">
+      <div>
+        <h5>Seiten</h5>
+        <ul>
+          <li><a href="/">Startseite</a></li>
+          <li><a href="/roboter">Roboter &amp; Pflege</a></li>
+          <li><a href="/medizin">Medizin-Revolution</a></li>
+          <li><a href="/asi">ASI — Endgame</a></li>
+          <li><a href="/seite2">Seite 2 — Mythen</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Referenz</h5>
+        <ul>
+          <li><a href="/quellen">Quellen &amp; Methodik</a></li>
+          <li><a href="#quellenverzeichnis">Fußnoten dieser Seite</a></li>
+          <li><a href="#prognosen">Prognosen-Check</a></li>
+          <li><a href="#mythen">7 Mythen zerlegt</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Info</h5>
+        <ul>
+          <li><a href="/impressum">Impressum</a></li>
+          <li><a href="https://arbeitslos.tech" target="_blank" rel="noopener">arbeitslos.tech</a></li>
+        </ul>
+      </div>
+    </div>
+    <p>© 2026 arbeitslos.tech · Stand: 30. Mai 2026 · Kein Mensch wurde bei der Erstellung dieser Seite entlassen. Noch nicht.</p>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Nach oben scrollen">↑</button>
+
+  <script>
+    const nav = document.getElementById('nav');
+    const scrollProgress = document.getElementById('scrollProgress');
+    const backToTop = document.getElementById('backToTop');
+    let lastScrollY = 0;
+
+    window.addEventListener('scroll', () => {
+      const sy = window.scrollY;
+      const docH = document.documentElement.scrollHeight - window.innerHeight;
+      scrollProgress.style.width = (sy / docH * 100) + '%';
+      if (sy > 80) nav.classList.add('scrolled'); else nav.classList.remove('scrolled');
+      if (sy > lastScrollY && sy > 300) nav.classList.add('hidden'); else nav.classList.remove('hidden');
+      if (sy > 600) backToTop.classList.add('visible'); else backToTop.classList.remove('visible');
+      lastScrollY = sy;
+    }, { passive: true });
+
+    backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      mobileMenu.classList.toggle('open');
+    });
+    mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      hamburger.classList.remove('active');
+      mobileMenu.classList.remove('open');
+    }));
+
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+    }, { threshold: 0.12, rootMargin: '0px 0px -48px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+    function toggleMyth(id) {
+      const card = document.getElementById(id);
+      const body = document.getElementById(id + '-body');
+      const isOpen = card.classList.contains('open');
+      document.querySelectorAll('.myth-card').forEach(c => {
+        c.classList.remove('open');
+        const b = document.getElementById(c.id + '-body');
+        if (b) b.style.maxHeight = '0';
+      });
+      if (!isOpen) {
+        card.classList.add('open');
+        body.style.maxHeight = body.scrollHeight + 'px';
+        setTimeout(() => { if (card.classList.contains('open')) body.style.maxHeight = '2000px'; }, 50);
+      }
+    }
+
+    document.querySelectorAll('.myth-header').forEach(h => {
+      h.setAttribute('tabindex', '0');
+      h.setAttribute('role', 'button');
+      h.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); h.click(); } });
+    });
+  </script>
+</body>
+</html>
