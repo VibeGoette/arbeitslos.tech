@@ -1631,6 +1631,11 @@
     /* icon-img-rules */
     .update-card .icon img { width:42px; height:42px; object-fit:contain; display:block; }
     .callout-icon img { width:30px; height:30px; object-fit:contain; display:block; vertical-align:middle; }
+    /* nav-fix: kein Umbruch + frueher auf Hamburger-Menue */
+    .nav-logo { white-space: nowrap; }
+    .nav-links a { white-space: nowrap; }
+    .nav-links { gap: 20px; }
+    @media (max-width: 1000px) { .nav-links { display: none; } .hamburger { display: flex; } }
   </style>
 </head>
 <body>
