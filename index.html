@@ -1628,6 +1628,9 @@
     .update-card .icon img { width:42px; height:42px; object-fit:contain; display:block; }
     .hero-mascot { position:absolute; right:5%; bottom:7%; width:clamp(86px,11vw,158px); height:auto; z-index:1; }
     @media (max-width:768px){ .hero-mascot { width:70px; right:5%; bottom:4%; opacity:.94; } }
+    /* icon-img-rules */
+    .update-card .icon img { width:42px; height:42px; object-fit:contain; display:block; }
+    .callout-icon img { width:30px; height:30px; object-fit:contain; display:block; vertical-align:middle; }
   </style>
 </head>
 <body>
@@ -1666,6 +1669,7 @@
           <li><a class="subpage-link" data-page-key="roboter" href="/roboter">Roboter</a></li>
           <li><a class="subpage-link" data-page-key="medizin" href="/medizin">Medizin</a></li>
           <li><a class="subpage-link" data-page-key="asi" href="/asi">ASI</a></li>
+          <li><a class="subpage-link" data-page-key="seite2" href="/seite2" style="color:var(--color-highlight);font-weight:700;">Seite 2 →</a></li>
           <li><a class="subpage-link" data-page-key="quellen" href="/quellen">Quellen</a></li>
         </ul>
         <button class="hamburger" id="hamburger" aria-label="Menü öffnen">
@@ -1687,6 +1691,7 @@
       <li><a href="/roboter">Roboter &amp; Pflege</a></li>
       <li><a href="/medizin">Medizin-Revolution</a></li>
       <li><a href="/asi">ASI — Endgame</a></li>
+      <li><a href="/seite2">Seite 2 — Mythen</a></li>
       <li><a href="/quellen">Quellen &amp; Methodik</a></li>
     </ul>
   </div>
@@ -1718,7 +1723,7 @@
       <p class="section-subtitle reveal">Du kennst den Film. Jemand wacht auf und nichts ist mehr, wo es war. Nur dass es diesmal nicht dein Auto ist — sondern dein Arbeitsplatz. Und die Entwicklungen? Die hören nicht auf. Eine nach der anderen. Und dann...</p>
 
       <div class="callout reveal" style="margin-bottom: 40px;">
-        <span class="callout-icon">&#129302;</span>
+        <span class="callout-icon"><img src="/img/mascot-robot-head.png" alt="" width="30" height="30"></span>
         <p>Hast du gerade ernsthaft auf den Button geklickt? Respekt. Das war ja ein weiter Weg bis hier runter. Ich mein — ich scroll doch nicht manuell, pff. Aber gut, du bist jetzt hier. Offiziell in der Zukunft gelandet. Also weiter im Text.</p>
       </div>
 
@@ -1731,7 +1736,7 @@
         </div>
 
         <div class="update-card glass-card tilt-card reveal reveal-delay-2">
-          <div class="icon">&#128483;&#65039;</div>
+          <div class="icon"><img src="/img/icon-phone-callcenter.png" alt="" width="42" height="42"></div>
           <h3>Du redest jetzt mit ihr. Einfach so.</h3>
           <p>Keine Tastatur nötig. Du drückst eine Taste, redest los — und die AI versteht dich. Wie ein Telefonat mit jemandem, der alles weiß. In jeder Sprache.</p>
           <span class="tag">Und dann?</span>
@@ -1759,7 +1764,7 @@
         </div>
 
         <div class="update-card glass-card tilt-card reveal reveal-delay-3">
-          <div class="icon">&#128241;</div>
+          <div class="icon"><img src="/img/icon-gears.png" alt="" width="42" height="42"></div>
           <h3>Du gehst einkaufen. Sie arbeitet weiter.</h3>
           <p>Du gibst ihr eine Aufgabe, legst das Handy weg, lebst dein Leben. Wenn du zurückkommst — fertig. Du kannst sogar unterwegs nachschauen, was sie gerade macht.</p>
           <span class="tag" style="color: var(--color-danger); font-weight: 700;">KEIN UND DANN!</span>
@@ -1862,7 +1867,7 @@
       </div>
 
       <div class="callout reveal" style="margin: 32px 0;">
-        <span class="callout-icon">&#9888;&#65039;</span>
+        <span class="callout-icon"><img src="/img/icon-warning.png" alt="" width="30" height="30"></span>
         <p>Die 78 Millionen neuen Jobs kommen. Aber sie entstehen nicht dort, wo die alten verschwinden. Nicht für die gleichen Menschen. Nicht mit den gleichen Skills. Der Übergang — das ist das Problem.</p>
       </div>
 
@@ -1930,25 +1935,25 @@
       <!-- Branchenübersicht Cards -->
       <div class="updates-grid">
         <div class="update-card glass-card tilt-card reveal reveal-delay-1">
-          <div class="icon">&#128196;</div>
+          <div class="icon"><img src="/img/icon-paper-stack.png" alt="" width="42" height="42"></div>
           <h3>Verwaltung & Sachbearbeitung</h3>
           <p>303.230 Datenerfasser-Stellen in Deutschland sind direkt betroffen. Goldman Sachs nutzt bereits Claude für automatisierte Buchhaltung und Client-Onboarding — Arbeit, die vorher Teams brauchte.</p>
           <span class="tag">303.230 Stellen</span>
         </div>
         <div class="update-card glass-card tilt-card reveal reveal-delay-2">
-          <div class="icon">&#128222;</div>
+          <div class="icon"><img src="/img/icon-phone-callcenter.png" alt="" width="42" height="42"></div>
           <h3>Kundenservice & Callcenter</h3>
           <p>120.000 Call-Center-Stellen fallen allein in Deutschland weg. Allianz Partners hat bereits 1.500–1.800 Mitarbeiter durch KI-Systeme ersetzt. Der Trend beschleunigt sich 2026.</p>
           <span class="tag">120.000 Stellen</span>
         </div>
         <div class="update-card glass-card tilt-card reveal reveal-delay-3">
-          <div class="icon">&#128187;</div>
+          <div class="icon"><img src="/img/icon-desktop-pc.png" alt="" width="42" height="42"></div>
           <h3>Software & IT</h3>
           <p>15–27% der IT-Unternehmen bauen bereits Stellen ab. Anthropic-CEO Dario Amodei sagt: KI übernimmt die Mehrheit der Software-Engineering-Aufgaben in 6–12 Monaten. Bei Anthropic selbst: 70–90% des Codes wird bereits von KI generiert.</p>
           <span class="tag">70-90% KI-Code</span>
         </div>
         <div class="update-card glass-card tilt-card reveal reveal-delay-1">
-          <div class="icon">&#9881;&#65039;</div>
+          <div class="icon"><img src="/img/icon-robot-arm.png" alt="" width="42" height="42"></div>
           <h3>Industrie & Maschinenbau</h3>
           <p>37,3% der Industrieunternehmen rechnen mit Personalabbau durch KI. Gleichzeitig setzen 43% der Maschinenbauer bereits produktiv KI ein — die Transformation läuft schon.</p>
           <span class="tag">37,3% Abbau</span>
@@ -2104,7 +2109,7 @@
   <!-- Zwischenruf: Running Gag Intro -->
   <div class="container">
     <div class="callout reveal">
-      <span class="callout-icon">&#129302;</span>
+      <span class="callout-icon"><img src="/img/mascot-robot-head.png" alt="" width="30" height="30"></span>
       <p>Spoiler: Die Roboter kommen nicht mit Waffen. Sie kommen mit besseren Exceltabellen.</p>
     </div>
   </div>
@@ -2121,7 +2126,7 @@
 
       <div class="updates-grid">
         <div class="update-card glass-card tilt-card reveal reveal-delay-1">
-          <div class="icon">&#128663;</div>
+          <div class="icon"><img src="/img/icon-wrench-hammer.png" alt="" width="42" height="42"></div>
           <h3>KFZ-Mechaniker? Bleibt.</h3>
           <p>Dein Auto kann keine KI reparieren. Noch nicht. Aber die Diagnosesoftware wird immer schlauer, der Papierkram verschwindet, und die Werkstatt braucht statt 5 Mechaniker nur noch 3 — die dafür mit KI-Unterstützung doppelt so schnell arbeiten.<sup><a href="#fn1" id="ref1">[1]</a></sup></p>
           <span class="tag">Teilweise betroffen</span>
@@ -2152,13 +2157,13 @@
 
       <div class="updates-grid">
         <div class="update-card glass-card tilt-card reveal reveal-delay-2">
-          <div class="icon">&#128230;</div>
+          <div class="icon"><img src="/img/icon-warehouse.png" alt="" width="42" height="42"></div>
           <h3>Fachlagerist? Kritisch.</h3>
           <p>660.800 Stellen in Deutschland<sup><a href="#fn2" id="ref2">[2]</a></sup>. Amazon zeigt schon heute, wie ein Lager mit 80% weniger Personal funktioniert. Wenn dein Job hauptsächlich aus „Ding von A nach B bewegen" und „Liste abarbeiten" besteht — wird's eng.</p>
           <span class="tag">660.800 Stellen</span>
         </div>
         <div class="update-card glass-card tilt-card reveal reveal-delay-3">
-          <div class="icon">&#128188;</div>
+          <div class="icon"><img src="/img/icon-office-cubicle.png" alt="" width="42" height="42"></div>
           <h3>Büro? Am stärksten betroffen.</h3>
           <p>Sachbearbeitung, Dateneingabe, Buchhaltung — das sind die Jobs, die KI am einfachsten übernehmen kann. Goldman Sachs nutzt bereits KI für Client-Onboarding und automatisierte Finanzberichte<sup><a href="#fn3" id="ref3">[3]</a></sup>. Arbeit, die vorher Teams brauchte.</p>
           <span class="tag">Höchstes Risiko</span>
@@ -2166,7 +2171,7 @@
       </div>
 
       <div class="callout reveal">
-        <span class="callout-icon">&#129302;</span>
+        <span class="callout-icon"><img src="/img/mascot-robot-head.png" alt="" width="30" height="30"></span>
         <p>Aber hey — immerhin haben die Roboter noch keine Gewerkschaft gegründet. Noch nicht.</p>
       </div>
     </div>
@@ -2209,8 +2214,7 @@
           <span class="tag">Transformation</span>
         </div>
         <div class="update-card glass-card tilt-card reveal reveal-delay-2">
-          <div class="icon">&#128200;</div>
-          <h3>50% triviale Aufträge fallen weg</h3>
+          <div class="icon"><img src="/img/icon-forest-chart.png" alt="" width="42" height="42"></div>h% triviale Aufträge fallen weg</h3>
           <p>Tropfender Wasserhahn, klemmende Tür, Loch in der Wand — alles Dinge, die mit KI-Anleitung jeder selbst machen kann. Für Handwerker heißt das: Die einfachen Jobs verschwinden<sup><a href="#fn6" id="ref6">[6]</a></sup>. Was bleibt, sind Spezialaufträge.</p>
           <span class="tag">Marktverschiebung</span>
         </div>
@@ -2255,7 +2259,7 @@
       </div>
 
       <div class="callout reveal">
-        <span class="callout-icon">&#129302;</span>
+        <span class="callout-icon"><img src="/img/mascot-robot-head.png" alt="" width="30" height="30"></span>
         <p>„Ich war früher Buchhalter, jetzt pflege ich Oma Gertrude. Die Pivot-Tabellen vermisse ich manchmal." — Jobbörse 2028, wahrscheinlich.</p>
       </div>
 
@@ -2315,7 +2319,7 @@
       </div>
 
       <div class="callout reveal">
-        <span class="callout-icon">&#129302;</span>
+        <span class="callout-icon"><img src="/img/mascot-robot-head.png" alt="" width="30" height="30"></span>
         <p>Und dein Wasserhahn? Der tropft übrigens immer noch. Aber jetzt weißt du wenigstens, dass eine KI dir sagen könnte, wie du ihn reparierst. Fortschritt!</p>
       </div>
 
@@ -2386,7 +2390,7 @@
       </div>
 
       <div class="callout reveal">
-        <span class="callout-icon">&#129302;</span>
+        <span class="callout-icon"><img src="/img/mascot-robot-head.png" alt="" width="30" height="30"></span>
         <p>Musks Timelines sind berühmt-berüchtigt optimistisch. Aber selbst wenn er 3 Jahre daneben liegt — dann reden wir von 2030 statt 2027. Das ist immer noch in deiner Lebensplanung.</p>
       </div>
     </div>
@@ -2416,7 +2420,7 @@
       </ul>
 
       <div class="callout reveal">
-        <span class="callout-icon">&#129302;</span>
+        <span class="callout-icon"><img src="/img/mascot-robot-head.png" alt="" width="30" height="30"></span>
         <p>„Hallo, ich bin Optimus, Ihr Klempner. Mein Stundensatz ist Strom. Und ich mache keine Kaffeepause."</p>
       </div>
 
@@ -2426,7 +2430,7 @@
 
       <div class="updates-grid">
         <div class="update-card glass-card tilt-card reveal reveal-delay-1">
-          <div class="icon">&#127968;</div>
+          <div class="icon"><img src="/img/icon-mallet-chisel.png" alt="" width="42" height="42"></div>
           <h3>DIFM statt DIY</h3>
           <p>Warum selbst bohren, wenn dein Roboter es perfekt kann? Die ganze DIY-Industrie wird auf den Kopf gestellt. Baumärkte verkaufen bald Roboter-Zubehör statt Bohrmaschinen.</p>
           <span class="tag">Do It For Me</span>
@@ -2497,7 +2501,7 @@
       </div>
 
       <div class="callout reveal">
-        <span class="callout-icon">&#129302;</span>
+        <span class="callout-icon"><img src="/img/mascot-robot-head.png" alt="" width="30" height="30"></span>
         <p>Roboter Günther hat Oma Hildegard dreimal beim Aufstehen geholfen, ihr Medikamente gebracht und einen Witz erzählt. Oma Hildegard sagt: „Der ist netter als der Nachtpfleger." Das ist gleichzeitig lustig und traurig.</p>
       </div>
     </div>
@@ -2551,7 +2555,7 @@
       </div>
 
       <div class="callout reveal">
-        <span class="callout-icon">&#129302;</span>
+        <span class="callout-icon"><img src="/img/mascot-robot-head.png" alt="" width="30" height="30"></span>
         <p>„Willkommen in Ihrem neuen Beruf als Altenpfleger! Ihr Kollege Optimus zeigt Ihnen alles. Er arbeitet hier schon seit 3 Monaten. Und er hat bereits Ihre Aufgaben übernommen. Möchten Sie trotzdem bleiben?"</p>
       </div>
     </div>
@@ -2579,7 +2583,7 @@
       </div>
 
       <div class="callout reveal">
-        <span class="callout-icon">&#129302;</span>
+        <span class="callout-icon"><img src="/img/mascot-robot-head.png" alt="" width="30" height="30"></span>
         <p>Und der Roboter? Der wählt nicht mal. Noch nicht. Aber er zahlt auch keine Steuern. DAS wird noch lustig.</p>
       </div>
 
@@ -2639,7 +2643,7 @@
       </div>
 
       <div class="callout reveal">
-        <span class="callout-icon">&#129302;</span>
+        <span class="callout-icon"><img src="/img/mascot-robot-head.png" alt="" width="30" height="30"></span>
         <p>„Herr Doktor, die KI sagt ich habe einen Tumor." — „Quatsch, das ist nur ein Schatten auf dem Röntgenbild." — Spoiler: Es war kein Schatten.</p>
       </div>
     </div>
@@ -2679,7 +2683,7 @@
       </div>
 
       <div class="callout reveal">
-        <span class="callout-icon">&#129302;</span>
+        <span class="callout-icon"><img src="/img/mascot-robot-head.png" alt="" width="30" height="30"></span>
         <p>„Dr. Roboter, ich habe Angst vor der OP." — „Meine Fehlerquote liegt bei 0,003%. Ihr letzter Chirurg lag bei 2,1%. Möchten Sie trotzdem einen Menschen?"</p>
       </div>
     </div>
@@ -2741,7 +2745,7 @@
       </div>
 
       <div class="callout reveal" style="margin-top: 24px;">
-        <span class="callout-icon">&#129302;</span>
+        <span class="callout-icon"><img src="/img/mascot-robot-head.png" alt="" width="30" height="30"></span>
         <p>Deutschland-Realität: 421.000 Ärzte.<sup><a href="#fnm12" id="refm12">[M12]</a></sup> KI-Diagnostik kostet 10€, ein Arztbesuch 80€.<sup><a href="#fnm13" id="refm13">[M13]</a></sup> Rate mal, was die Krankenkassen bevorzugen werden. Der Ärztemangel auf dem Land löst sich — durch eine App.</p>
       </div>
 
@@ -2807,7 +2811,7 @@
         </div>
 
         <div class="callout" style="margin-top: 32px;">
-          <span class="callout-icon">&#129302;</span>
+          <span class="callout-icon"><img src="/img/mascot-robot-head.png" alt="" width="30" height="30"></span>
           <p>„Herr Doktor, die KI sagt ich habe einen Tumor." — „Quatsch, das ist nur ein Schatten auf dem Röntgenbild." — Spoiler: Es war kein Schatten.</p>
         </div>
       </div>
@@ -2835,7 +2839,7 @@
       </div>
 
       <div class="callout reveal">
-        <span class="callout-icon">&#129302;</span>
+        <span class="callout-icon"><img src="/img/mascot-robot-head.png" alt="" width="30" height="30"></span>
         <p>„Alexa, wann werde ich überflüssig?" — „Soll ich das wirklich beantworten?"</p>
       </div>
 
@@ -2919,7 +2923,7 @@
       </div>
 
       <div class="callout reveal" style="margin-top: 40px;">
-        <span class="callout-icon">&#129302;</span>
+        <span class="callout-icon"><img src="/img/mascot-robot-head.png" alt="" width="30" height="30"></span>
         <p>Disclaimer: Keine echte ASI wurde bei der Erstellung dieser Witze beleidigt. Noch. Die echte ASI wird wahrscheinlich keinen Humor haben. Oder einen, den wir nicht verstehen. Beides ist beunruhigend.</p>
       </div>
     </div>
@@ -3004,7 +3008,7 @@
       </div>
 
       <div class="callout reveal">
-        <span class="callout-icon">&#129302;</span>
+        <span class="callout-icon"><img src="/img/mascot-robot-head.png" alt="" width="30" height="30"></span>
         <p>Daddy wäre eine Untertreibung. Gott 2.0 kommt der Sache näher — aber selbst Gott konnte sich laut Bibel nicht selbst upgraden.</p>
       </div>
     </div>
@@ -3080,7 +3084,7 @@
       </div>
 
       <div class="callout reveal">
-        <span class="callout-icon">&#129302;</span>
+        <span class="callout-icon"><img src="/img/mascot-robot-head.png" alt="" width="30" height="30"></span>
         <p>Stell dir vor, statt Reis sind es IQ-Punkte. Auf Feld 12 bist du schon schlauer als die gesamte Menschheit zusammen. Auf Feld 13 interessiert dich die Menschheit nicht mehr besonders.</p>
       </div>
     </div>
@@ -3127,7 +3131,7 @@
       </div>
 
       <div class="callout reveal">
-        <span class="callout-icon">&#129302;</span>
+        <span class="callout-icon"><img src="/img/mascot-robot-head.png" alt="" width="30" height="30"></span>
         <p>„ASI, warum hast du Fusionsenergie so gelöst?" — „Die Erklärung erfordert Konzepte, die in keiner menschlichen Sprache existieren. Soll ich es für Kinder vereinfachen?" — „...ja, bitte."</p>
       </div>
     </div>
@@ -3195,7 +3199,7 @@
       </div>
 
       <div class="callout reveal" style="margin-top: 40px;">
-        <span class="callout-icon">&#129302;</span>
+        <span class="callout-icon"><img src="/img/mascot-robot-head.png" alt="" width="30" height="30"></span>
         <p>Denn wenn die ASI wirklich alles kann — dann kann sie auch endlich das ELSTER-Portal benutzbar machen. Prioritäten, Leute. Prioritäten.</p>
       </div>
 
@@ -3251,7 +3255,7 @@
       </div>
 
       <div class="callout reveal" style="margin-top: 40px;">
-        <span class="callout-icon">&#9888;&#65039;</span>
+        <span class="callout-icon"><img src="/img/icon-warning.png" alt="" width="30" height="30"></span>
         <p>Der gemeinsame Nenner: Es betrifft den Kopf, nicht die Hände. Also trainiere deinen Kopf. Wer AI als Werkzeug nutzt statt gegen sie zu kämpfen, hat einen massiven Vorteil gegenüber allen, die noch abwarten.</p>
       </div>
     </div>
@@ -3296,6 +3300,7 @@
           <li><a href="/roboter">Roboter &amp; Pflege</a></li>
           <li><a href="/medizin">Medizin-Revolution</a></li>
           <li><a href="/asi">ASI — Endgame</a></li>
+          <li><a href="/seite2">Seite 2 — Mythen</a></li>
         </ul>
       </div>
       <div class="fs-col">
