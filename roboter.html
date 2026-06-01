@@ -23,7 +23,7 @@
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,800;1,9..144,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,800;1,9..144,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400&display=swap" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
   <style>
@@ -51,7 +51,7 @@
       --nav-bg: rgba(250, 249, 247, 0.92);
 
       --font-display: 'Fraunces', serif;
-      --font-body: 'Plus Jakarta Sans', sans-serif;
+      --font-body: 'Source Serif 4', Georgia, serif;
 
       --radius: 20px;
       --radius-sm: 10px;
@@ -2348,11 +2348,11 @@
                   responsive: true,
                   animation: { duration: 1500, easing: 'easeOutQuart' },
                   plugins: {
-                    legend: { labels: { color: '#5F5045', font: { family: 'Plus Jakarta Sans', size: 12 } } }
+                    legend: { labels: { color: '#5F5045', font: { family: 'Source Serif 4', size: 12 } } }
                   },
                   scales: {
-                    x: { grid: { color: 'rgba(26,15,10,0.06)' }, ticks: { color: '#5F5045', font: { family: 'Plus Jakarta Sans' } } },
-                    y: { grid: { color: 'rgba(26,15,10,0.06)' }, ticks: { color: '#5F5045', font: { family: 'Plus Jakarta Sans' } } }
+                    x: { grid: { color: 'rgba(26,15,10,0.06)' }, ticks: { color: '#5F5045', font: { family: 'Source Serif 4' } } },
+                    y: { grid: { color: 'rgba(26,15,10,0.06)' }, ticks: { color: '#5F5045', font: { family: 'Source Serif 4' } } }
                   }
                 }
               });
@@ -2398,20 +2398,20 @@
                 animation: { duration: 1500, easing: 'easeOutQuart' },
                 interaction: { mode: 'index', intersect: false },
                 plugins: {
-                  legend: { labels: { color: '#5F5045', font: { family: 'Plus Jakarta Sans', size: 11 }, boxWidth: 12 } },
+                  legend: { labels: { color: '#5F5045', font: { family: 'Source Serif 4', size: 11 }, boxWidth: 12 } },
                   tooltip: {
                     backgroundColor: 'rgba(26,20,18,0.92)',
                     titleColor: '#F5EDE8',
                     bodyColor: '#F5EDE8',
-                    titleFont: { family: 'Plus Jakarta Sans' },
-                    bodyFont: { family: 'Plus Jakarta Sans' },
+                    titleFont: { family: 'Source Serif 4' },
+                    bodyFont: { family: 'Source Serif 4' },
                     borderColor: 'rgba(26,15,10,0.15)', borderWidth: 1, padding: 12,
                     callbacks: { label: (c) => c.dataset.label + ': ' + (c.raw !== null ? c.raw + '%' : 'N/A') }
                   }
                 },
                 scales: {
-                  x: { max: 100, grid: { color: 'rgba(26,15,10,0.06)' }, ticks: { color: '#5F5045', font: { family: 'Plus Jakarta Sans', size: 11 }, callback: v => v + '%' } },
-                  y: { grid: { display: false }, ticks: { color: '#5F5045', font: { family: 'Plus Jakarta Sans', size: 11 } } }
+                  x: { max: 100, grid: { color: 'rgba(26,15,10,0.06)' }, ticks: { color: '#5F5045', font: { family: 'Source Serif 4', size: 11 }, callback: v => v + '%' } },
+                  y: { grid: { display: false }, ticks: { color: '#5F5045', font: { family: 'Source Serif 4', size: 11 } } }
                 }
               }
             });
@@ -2466,21 +2466,21 @@
                 animation: { duration: 2000, easing: 'easeOutQuart' },
                 interaction: { mode: 'index', intersect: false },
                 plugins: {
-                  legend: { labels: { color: '#5F5045', font: { family: 'Plus Jakarta Sans', size: 11 }, boxWidth: 12 } },
+                  legend: { labels: { color: '#5F5045', font: { family: 'Source Serif 4', size: 11 }, boxWidth: 12 } },
                   tooltip: {
                     backgroundColor: 'rgba(26, 20, 18, 0.92)',
                     titleColor: '#F5EDE8',
                     bodyColor: '#F5EDE8',
-                    titleFont: { family: 'Plus Jakarta Sans' },
-                    bodyFont: { family: 'Plus Jakarta Sans' },
+                    titleFont: { family: 'Source Serif 4' },
+                    bodyFont: { family: 'Source Serif 4' },
                     borderColor: 'rgba(26, 15, 10, 0.15)',
                     borderWidth: 1,
                     padding: 12,
                   }
                 },
                 scales: {
-                  x: { grid: { color: 'rgba(26,15,10,0.06)' }, ticks: { color: '#5F5045', font: { family: 'Plus Jakarta Sans', size: 11 } } },
-                  y: { grid: { color: 'rgba(26,15,10,0.06)' }, ticks: { color: '#5F5045', font: { family: 'Plus Jakarta Sans', size: 11 }, callback: v => v + ' Mio.' } }
+                  x: { grid: { color: 'rgba(26,15,10,0.06)' }, ticks: { color: '#5F5045', font: { family: 'Source Serif 4', size: 11 } } },
+                  y: { grid: { color: 'rgba(26,15,10,0.06)' }, ticks: { color: '#5F5045', font: { family: 'Source Serif 4', size: 11 }, callback: v => v + ' Mio.' } }
                 }
               }
             });
